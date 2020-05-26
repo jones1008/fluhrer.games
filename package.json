@@ -1,0 +1,15 @@
+{
+  "name": "fluhrer.games",
+  "version": "1.0.0",
+  "description": "fluhrer.games website",
+  "scripts": {
+    "serve": "bundle exec jekyll serve",
+    "build": "bundle exec jekyll build"
+  },
+  "author": "jones1008",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
+  }
+}

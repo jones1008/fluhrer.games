@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Siedlungsaufbau
+  link: /sites/siedlungsaufbau.html
+- name: Erweiterungen
+  link: /sites/erweiterungen.html
+- name: Cantopia-App
+  link: /sites/cantopia-app.html
+- name: Über uns
+  link: /sites/ueber-uns.html
