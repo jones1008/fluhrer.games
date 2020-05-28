@@ -5,4 +5,9 @@
 /* any style customization must be before the bootstrap import */
 //@import "../node_modules/bootstrap/scss/bootstrap";
 @import "variables";
+
 @import "bootstrap/scss/bootstrap";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@import "layout";
+@import "index";

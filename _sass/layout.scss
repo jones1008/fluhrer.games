@@ -1,0 +1,25 @@
+/* pt-serif-regular - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/pt-serif-v11-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('PT Serif'), local('PTSerif-Regular'),
+  url('assets/fonts/pt-serif-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('assets/fonts/pt-serif-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('assets/fonts/pt-serif-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('assets/fonts/pt-serif-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('assets/fonts/pt-serif-v11-latin-regular.svg#PTSerif') format('svg'); /* Legacy iOS */
+}
+body {
+  font-family: "PT Serif" !important;
+}
+p {
+  font-size: 1.25rem !important;
+}
+
+.section-caption {
+  @extend .font-italic;
+  @extend .font-weight-bold;
+  margin-top: 1em;
+}
