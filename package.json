@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "bundle exec jekyll serve",
     "live": "browser-sync start --proxy 'localhost:4000' --files '_site/**/*'",
-    "build": "bundle exec jekyll build"
+    "build": "bundle exec jekyll build && purgecss -c ./_purgecss.config.js"
   },
   "author": "jones1008",
   "license": "ISC",

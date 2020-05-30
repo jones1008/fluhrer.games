@@ -11,15 +11,57 @@
   url('assets/fonts/pt-serif-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
   url('assets/fonts/pt-serif-v11-latin-regular.svg#PTSerif') format('svg'); /* Legacy iOS */
 }
+
 body {
-  font-family: "PT Serif" !important;
+  font-family: "PT Serif", serif !important;
 }
 p {
   font-size: 1.25rem !important;
 }
-
-.section-caption {
-  @extend .font-italic;
+h4 {
   @extend .font-weight-bold;
-  margin-top: 1em;
+}
+
+// components:
+section {
+  .section-wrapper {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    .section-caption {
+      @extend .font-italic;
+      @extend .font-weight-bold;
+    }
+  }
+  &:nth-child(odd){
+    background: #d3d3d33d;
+  }
+}
+
+.icons {
+  @extend .row;
+  @extend .text-center;
+  > div {
+    @extend .col-md-4;
+    > i {
+      font-size: 4em;
+    }
+    > .icon-title {
+      @extend .font-weight-bold;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.image-and-text {
+  @extend .row;
+  .image {
+    @extend .col-md-3;
+  }
+  .text {
+    @extend .col-md-9;
+    .story {
+      @extend .font-italic;
+    }
+  }
 }
