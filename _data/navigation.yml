@@ -1,7 +1,7 @@
 - name: Home
   link: /
-- name: Siedlungsaufbau
-  link: /sites/siedlungsaufbau.html
+- name: Das Spiel
+  link: /sites/das-spiel.html
 - name: Erweiterungen
   link: /sites/erweiterungen.html
 - name: Cantopia-App

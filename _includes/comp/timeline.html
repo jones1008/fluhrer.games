@@ -1,0 +1,24 @@
+<div>
+    {% for item in site.data[include.folder].[include.data] %}
+        <div class="timeline-element row">
+            <div class="col-3 col-md-1 d-flex flex-column align-items-center">
+                <h5 class="text-center font-italic text-danger">
+                    {{item.time}}
+                </h5>
+                {% if forloop.last == false %}
+                    <div class="vertical-ruler"></div>
+                {% endif %}
+            </div>
+            <div class="col-9 col-md-11 row p-0">
+                <div class="col text">
+                    <h5>{{item.title}}</h5>
+                    <p class="font-italic">{{item.story}}</p>
+                    {{item.facts | markdownify}}
+                </div>
+                <div class="image col-md-3 p-md-0 d-flex align-items-center">
+                    <img width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

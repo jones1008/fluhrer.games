@@ -3,34 +3,22 @@
   background-image: url(/assets/images/dice.jpg);
   background-position: center center;
   background-size: cover;
-  height: 500px;
+  height: 700px;
   .hero-text {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .hero-title {
-      font-size: 5em;
-      font-weight: bold;
-    }
     .hero-subtitle {
-      font-size: 2.5em;
+      font-weight: normal !important;
       line-height: 1;
     }
   }
 }
 
-@media (min-width: 992px){
+@include media-breakpoint-down(md){
   .hero-image {
-    height: 700px;
-    .hero-text {
-      .hero-title {
-        font-size: 6em;
-      }
-      .hero-subtitle {
-        font-size: 3em;
-      }
-    }
+    height: 500px;
   }
 }

@@ -3,59 +3,61 @@ layout: default
 title: Cantopia by FluhrerGames
 ---
 
-
 <div class="hero-image">
     <div class="container text-center hero-text text-white">
-        <h1 class="hero-title">
-            Cantopia
-        </h1>
-        <div class="hero-subtitle font-italic">
+        <h1>Cantopia</h1>
+        <h3 class="hero-subtitle font-italic">
             Settle down & rise up
-        </div>
+        </h3>
         <br>
         <br>
-        <a href="#was" class="btn btn-lg btn-primary">WAT?</a>
+        <a href="#was-ist-cantopia" class="text-white">
+            <i class="fas fa-chevron-circle-down fa-4x"></i>
+        </a>
     </div>
 </div>
 
-<section id="was">
-    <div class="container section-wrapper">
-        <h1 class="section-caption">Was ist Cantopia?</h1>
-        <p class="text-center lead">
-            Ein (Großgruppen)-Spiel mit...
-        </p>
-        <!--    TODO: Wiederverwendbar machen mit scss Klassen und @extend-->
-        <div class="icons">
-            <div>
-                <i class="fas fa-lightbulb fa-4x text-warning"></i>
-                <div class="icon-title">Strategie</div>
-            </div>
-            <div>
-                <i class="fas fa-users text-primary"></i>
-                <div class="icon-title">Teamwork</div>
-            </div>
-            <div>
-                <i class="fas fa-laugh-beam text-danger"></i>
-                <div class="icon-title">Begeisterung</div>
-            </div>
-        </div>
+<section id="was-ist-cantopia">
+    <div>
+        <h4>Was ist Cantopia?</h4>
+        <p class="text-center">Ein (Großgruppen)-Spiel mit...</p>
+        {% include comp/icons.html folder="home" data="was-ist-cantopia" %}
     </div>
 </section>
 
-<section id="wie">
-    <div class="container section-wrapper">
-        <h1 class="section-caption">Wie funktioniert Cantopia?</h1>
-        <div class="image-and-text">
-            <div class="image">
-                Bild
-            </div>
-            <div class="text">
-                <h4>Mehrere Teams</h4>
-                <p class="story">
-                    Im Land Cantopia lassen sich mehrere Siedler nieder und gründen einzelne Sieldungen.
-                </p>
-                <p>Jedes Team sitzt an einem Tisch und baut sich dort eine eigene Siedlung auf.</p>
-            </div>
-        </div>
+<section id="wie-funktioniert-cantopia">
+    <div>
+        <h4>Wie funktioniert Cantopia?</h4>
+        {% include comp/image-and-text.html folder="home" data="wie-funktioniert-cantopia" %}
+        {% include comp/centered-button.html name="Mehr zum Siedlungsaufbau" %}
     </div>
 </section>
+
+<section id="welchen-umfang-hat-cantopia">
+    <div>
+        <h4>Welchen Umfang hat Cantopia?</h4>
+        {% include comp/icons.html folder="home" data="welchen-umfang-hat-cantopia" %}
+    </div>
+</section>
+
+<section id="wie-kann-ich-cantopia-spielen">
+    <div>
+        <h4>Wie kann ICH Cantopia spielen?</h4>
+        <p>Du kannst Cantopia ausleihen, kaufen, selber bauen oder wir kommen vorbei und leiten es an.</p>
+        {% include comp/centered-button.html name="Mehr dazu" %}
+    </div>
+</section>
+
+<section id="wen-begeistert-cantopia">
+    <div>
+        <h4>Wen begeistert Cantopia?</h4>
+        <p>
+            Bisher haben <span class="big-text">1.907</span> Spieler Cantopia gespielt.<br>
+            Davon hauptsächlich in <span class="big-text">Kinder- und Jugendfreizeiten</span>.<br>
+            Cantopia ist aber auch geeignet für <span class="big-text">Team- und Firmenevents</span>.
+        </p>
+        {% include comp/quotes.html folder="home" data="quotes" %}
+    </div>
+</section>
+
+<!--TODO: Instagram verknüpfen-->

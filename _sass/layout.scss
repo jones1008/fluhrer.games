@@ -1,4 +1,4 @@
-/* pt-serif-regular - latin */
+// font
 @font-face {
   font-family: 'PT Serif';
   font-style: normal;
@@ -12,25 +12,58 @@
   url('assets/fonts/pt-serif-v11-latin-regular.svg#PTSerif') format('svg'); /* Legacy iOS */
 }
 
+// typographie
 body {
   font-family: "PT Serif", serif !important;
+  font-size: 1.25rem;
 }
 p {
-  font-size: 1.25rem !important;
+  line-height: 1.3;
+}
+h1 {
+  @extend .font-weight-bold;
+  font-size: 4.8rem;
+}
+h2 {
+  @extend .font-weight-bold;
+  font-size: 4rem;
+}
+h3 {
+  @extend .font-weight-bold;
+  font-size: 3.2rem;
 }
 h4 {
   @extend .font-weight-bold;
+  font-size: 2.4rem;
 }
+h5 {
+  @extend .font-weight-bold;
+  font-size: 1.75rem;
+}
+h6 {
+  @extend .font-weight-bold;
+  font-size: 1.25rem;
+}
+.page-heading {
+  @extend .font-italic;
+  margin-top: 1rem;
+}
+.big-text {
+  @extend .text-danger;
+  @extend .font-weight-bold;
+  font-size: 2rem;
+}
+
 
 // components:
 section {
-  .section-wrapper {
+  > div {
+    @extend .container;
     padding-top: 2em;
     padding-bottom: 2em;
-
-    .section-caption {
+    > h4 {
       @extend .font-italic;
-      @extend .font-weight-bold;
+      margin-bottom: 1.5rem;
     }
   }
   &:nth-child(odd){
@@ -38,30 +71,58 @@ section {
   }
 }
 
+// icons
 .icons {
-  @extend .row;
-  @extend .text-center;
   > div {
-    @extend .col-md-4;
-    > i {
-      font-size: 4em;
-    }
+    padding-top: 1em;
+    padding-bottom: 1em;
     > .icon-title {
-      @extend .font-weight-bold;
-      font-size: 1.5rem;
+      margin-top: 0.5rem;
     }
   }
 }
 
+// image and text
 .image-and-text {
-  @extend .row;
+  padding: 1rem 0;
   .image {
     @extend .col-md-3;
+    @extend .p-md-0;
+    padding-bottom: 1rem;
   }
-  .text {
-    @extend .col-md-9;
-    .story {
-      @extend .font-italic;
+  @include media-breakpoint-down(sm) {
+    &:nth-child(even) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+// quote
+.quotes {
+  padding: 1rem 0;
+  > div {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    > p {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+// timeline
+.timeline-element {
+  padding: 1rem 0;
+  .vertical-ruler {
+    border-left: 2px solid lightgrey;
+    height: calc(100% - 36px);
+    margin-bottom: 0.5rem;
+    position: absolute;
+    top: 51px;
+  }
+  @include media-breakpoint-up(md) {
+    .text {
+      padding-left: 2rem;
     }
   }
 }
