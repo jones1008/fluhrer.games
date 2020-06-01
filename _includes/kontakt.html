@@ -1,0 +1,15 @@
+<section>
+    <div>
+        <h4>Kontakt</h4>
+        <p>Weitere Fragen? Telefongespräch oder Angebot erwünscht? Kontaktiere uns einfach via:</p>
+        {% for item in site.data.kontakt %}
+            <div class="d-flex align-items-center py-3">
+                <div class="d-flex flex-column text-center">
+                    <i class="{{item.icon}} fa-3x"></i>
+                    <small>{{item.name}}</small>
+                </div>
+                <a class="text-white" href="{{item.link}}" target="_blank"><u>{{item.text}}</u></a>
+            </div>
+        {% endfor %}
+    </div>
+</section>

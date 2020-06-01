@@ -1,0 +1,26 @@
+{% for item in site.data[include.folder].[include.data] %}
+    <section class="section-gradient">
+        <div>
+            <h4 class="font-italic">{{item.name}}</h4>
+            <p>{{item.text}}</p>
+            <h5><i class="fas fa-plus text-success"></i> Vorteile</h5>
+            <ul>
+                {% for advantage in item.advantages %}
+                    <li>{{advantage}}</li>
+                {% endfor %}
+            </ul>
+            <h5><i class="fas fa-minus text-danger"></i> Nachteile</h5>
+            <ul>
+                {% for disadvantage in item.disadvantages %}
+                    <li>{{disadvantage}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+    <div class="container cover-container">
+        <div class="lrb-gradient-white">
+<!--            <img class="img-fluid" src="/assets/images/cover-{{item.id}}.png" alt="Cover Cantopia Erweiterung {{item.name}}">-->
+            <img class="img-fluid" src="/assets/images/placeholder.png" alt="Cover Cantopia Erweiterung {{item.name}}">
+        </div>
+    </div>
+{% endfor %}

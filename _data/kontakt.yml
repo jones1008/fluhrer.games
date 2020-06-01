@@ -1,0 +1,13 @@
+- name: "E-Mail"
+  icon: "fas fa-envelope"
+  text: "info@fluhrer.games"
+  link: "mailto:info@fluhrer.games"
+- name: "Telegram"
+  icon: "fab fa-telegram-plane"
+  text: "t.me/fluhrer.games"
+  link: "https://t.me/fluhrer.games"
+- name: "Instagram"
+  icon: "fab fa-instagram"
+  text: "@fluhrer.games"
+  link: "https://instagram.com/fluhrer.games"
+
