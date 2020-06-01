@@ -22,3 +22,10 @@
     height: 500px;
   }
 }
+
+.big-text {
+  @extend .text-danger;
+  @extend h5;
+  @extend .d-inline;
+  font-size: 2rem;
+}

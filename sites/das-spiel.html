@@ -3,11 +3,37 @@ layout: default
 title: Cantopia - Das Spiel
 ---
 
-<div class="container">
-    <h3 class="page-heading">Das Spiel</h3>
-    <p>
-        Folgende Timeline zeigt einen möglichen Aufbau einer Siedlung eines Teams während eines Spiels und soll einen
-        Eindruck über den Verlauf geben.
-    </p>
-    {% include comp/timeline.html folder="das-spiel" data="timeline" %}
-</div>
+<section>
+    <div>
+        <h3 class="page-heading">Das Spiel</h3>
+        <p>
+            Folgende Timeline zeigt einen möglichen Aufbau einer Siedlung eines Teams während eines Spiels und soll einen
+            Eindruck über den Verlauf geben.
+        </p>
+        {% include comp/timeline.html folder="das-spiel" data="timeline" %}
+    </div>
+</section>
+
+<section>
+    <div>
+        <h4>Ende des Spiels</h4>
+        <div class="image-big">
+            <div>
+                <img src="/assets/images/placeholder.png" alt="">
+                <div class="image-subtitle">Möglicher Aufbau einer Siedlung am Ende des Spiel</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <h4>Erweiterungen</h4>
+        <p>
+            Diese Timeline stellt einen schematischen Ablauf des <u>Grundspiels</u> dar.<br>
+            Dieses Grundspiel kann modular durch 4 verschiedene Erweiterungen ergänzt werden, wodurch das Spiel jeweils
+            eine individuelle Dynamik erhält.
+        </p>
+        {% include comp/centered-button.html name="Mehr zu Erweiterungen" site="erweiterungen" %}
+    </div>
+</section>
