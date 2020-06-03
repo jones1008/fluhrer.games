@@ -1,15 +1,19 @@
 <div class="quotes row text-center justify-content-center">
     {% for item in site.data[include.folder].[include.data] %}
-    <div class="col-md-4">
-        <i class="fas fa-quote-right fa-2x text-grey"></i>
-        <p class="font-italic">{{item.text}}</p>
-        <h6 class="d-inline">
-            {{item.by}}
-        </h6>
+    <div class="col-md-4 my-auto py-5 py-md-3">
+        <div>
+            <i class="fas fa-quote-right fa-2x text-grey"></i>
+            <p class="font-italic">{{item.text}}</p>
+        </div>
+        <div>
+            <h6 class="d-inline">
+                {{item.by}}
+            </h6>
 
-        {% if item.addition != "" %}
+            {% if item.addition != "" %}
             <div class="small-text">{{item.addition}}</div>
-        {% endif %}
+            {% endif %}
+        </div>
     </div>
     {% endfor %}
 </div>
