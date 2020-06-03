@@ -45,7 +45,7 @@ h6 {
 }
 .page-heading {
   @extend .font-italic;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .small-text {
   @extend .text-grey;
@@ -55,10 +55,12 @@ h6 {
 hr {
   margin-top: 2rem;
   margin-bottom: 2rem;
-
+}
+article {
+  margin-top: 58px;
 }
 
-
+// TODO: in einzelne Component-CSS-Files auslagern
 // components:
 section {
   > div {
@@ -144,5 +146,12 @@ section:nth-of-type(even) {
       @extend .small-text;
       padding-top: 0.5rem;
     }
+  }
+}
+
+.icons-and-text {
+  .feature-icon {
+    min-width: 100px;
+    margin-right: 1.5rem;
   }
 }

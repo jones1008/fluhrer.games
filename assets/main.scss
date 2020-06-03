@@ -10,6 +10,8 @@
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 @import "layout";
-@import "index";
-@import "erweiterungen";
+@import "header";
 @import "footer";
+
+@import "sites/index";
+@import "sites/erweiterungen";

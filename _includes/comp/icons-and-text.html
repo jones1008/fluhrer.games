@@ -1,0 +1,13 @@
+<div class="icons-and-text">
+    {% for item in site.data[include.folder].[include.data] %}
+    <div class="row d-flex align-items-center py-md-2 my-5">
+        <div class="col-12 col-md-5 d-flex align-items-center">
+            <i class="feature-icon py-3 py-md-0 text-center fas fa-{{item.icon}} fa-4x text-{{item.iconColor}}"></i>
+            <h5 class="my-0">{{item.title}}</h5>
+        </div>
+        <div class="col-md-7">
+            {{item.text}}
+        </div>
+    </div>
+    {% endfor %}
+</div>

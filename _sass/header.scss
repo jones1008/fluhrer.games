@@ -1,0 +1,7 @@
+.navbar {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1000;
+  border-bottom: lightgrey 1px solid;
+  width: 100%;
+}
