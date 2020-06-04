@@ -1,7 +1,7 @@
 {% for item in site.data[include.folder].[include.data] %}
     <section class="section-gradient">
         <div>
-            <h4 class="font-italic">{{item.name}}</h4>
+            <h4 class="font-italic" id="{{item.id}}">{{item.name}}</h4>
             <p>{{item.text}}</p>
             <h5><i class="fas fa-plus text-success"></i> Vorteile</h5>
             <ul>

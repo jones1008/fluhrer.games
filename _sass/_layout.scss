@@ -59,6 +59,16 @@ hr {
 article {
   margin-top: 58px;
 }
+section{
+  h4[id]::before, h3[id]::before{
+    display: block;
+    content: " ";
+    margin-top: -60px;
+    height: 60px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
 
 // TODO: in einzelne Component-CSS-Files auslagern
 // components:
