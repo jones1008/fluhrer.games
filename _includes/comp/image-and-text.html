@@ -4,7 +4,7 @@
             {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
             {% if thecycle == 'odd' %}
                 <div class="image">
-                    <img width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+                    <img class="materialboxed" width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
                 </div>
             {% endif %}
                 <div class="col-md-9">
@@ -14,7 +14,7 @@
                 </div>
             {% if thecycle == 'even' %}
                 <div class="image">
-                    <img width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+                    <img class="materialboxed" width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
                 </div>
             {% endif %}
         </div>
