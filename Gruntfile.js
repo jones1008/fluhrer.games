@@ -24,10 +24,14 @@ module.exports = function(grunt) {
         dest: "_site/assets/css/main.css"
       }
     },
-    uglify: {
-      build: {
-        src: '_site/assets/main.js',
-        dest: '_site/assets/main.js'
+    purgecss: {
+      css: {
+        options: {
+          content: ["_site/*.html", "_site/**/*.html"]
+        },
+        files: {
+          "_site/assets/css/main.css": ["_site/assets/css/main.css"]
+        }
       }
     },
     copy: {
@@ -36,6 +40,12 @@ module.exports = function(grunt) {
         cwd: 'node_modules/@fortawesome/fontawesome-free/webfonts',
         src: "**",
         dest: "_site/assets/webfonts"
+      }
+    },
+    uglify: {
+      build: {
+        src: '_site/assets/main.js',
+        dest: '_site/assets/main.js'
       }
     },
     watch: {
@@ -47,11 +57,12 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify-es');
+  grunt.loadNpmTasks('grunt-purgecss');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-uglify-es');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'copy', 'watch']);
-
+  grunt.registerTask('default', ['concat', 'purgecss', 'copy', 'uglify']);
+  grunt.registerTask('serve', ['concat', 'purgecss', 'copy', 'uglify', 'watch']);
 };

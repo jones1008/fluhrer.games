@@ -1,20 +1,13 @@
 ---
 ---
-//@charset "utf-8";
 
-/* any style customization must be before the bootstrap import */
-//@import "../node_modules/bootstrap/scss/bootstrap";
 @import "variables";
 
 @import "bootstrap/scss/bootstrap";
-//@import "node_modules/@fortawesome/fontawesome-free/css/all.min.css";
-//@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-//@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "materialize-css/sass/components/materialbox";
 
 @import "layout";
 @import "header";
 @import "footer";
-
 @import "sites/index";
 @import "sites/erweiterungen";

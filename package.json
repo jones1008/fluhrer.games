@@ -4,9 +4,8 @@
   "description": "fluhrer.games website",
   "scripts": {
     "serve": "bundle exec jekyll serve",
-    "grunt": "grunt",
     "live": "browser-sync start --proxy 'localhost:4000' --files '_site/**/*'",
-    "build": "bundle exec jekyll build && purgecss -c ./_purgecss.config.js && grunt",
+    "build": "bundle exec jekyll build && grunt",
     "install": "bundle install && npm install"
   },
   "author": "jones1008",
@@ -25,6 +24,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-uglify-es": "^3.3.0",
-    "grunt-contrib-watch": "^1.1.0"
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-purgecss": "^2.2.0"
   }
 }
