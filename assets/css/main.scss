@@ -1,6 +1,8 @@
 ---
 ---
 
+@charset "UTF-8";
+
 @import "variables";
 
 @import "bootstrap/scss/bootstrap";
@@ -11,3 +13,4 @@
 @import "footer";
 @import "sites/index";
 @import "sites/erweiterungen";
+@import "comps/gallery";

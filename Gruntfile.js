@@ -27,7 +27,8 @@ module.exports = function(grunt) {
     purgecss: {
       css: {
         options: {
-          content: ["_site/*.html", "_site/**/*.html"]
+          content: ["_site/*.html", "_site/**/*.html"],
+          whitelist: ["materialbox-overlay"]
         },
         files: {
           "_site/assets/css/main.css": ["_site/assets/css/main.css"]

@@ -1,0 +1,7 @@
+<div class="row gallery">
+    {% for item in site.data[include.folder].[include.data] %}
+        <div class="col-12 col-sm-6 col-lg-3 px-4 gallery-item">
+            <img class="shadow materialboxed" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+        </div>
+    {% endfor %}
+</div>
