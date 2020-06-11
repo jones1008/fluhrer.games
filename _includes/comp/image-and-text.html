@@ -9,7 +9,9 @@
             {% endif %}
                 <div class="col-md-9">
                     <h5>{{item.title}}</h5>
-                    <p class="font-italic">{{item.story}}</p>
+                    {% if item.story != '' %}
+                        <p class="font-italic font-serif">&bdquo;{{item.story}}&quot;</p>
+                    {% endif %}
                     <p>{{item.facts}}</p>
                 </div>
             {% if thecycle == 'even' %}

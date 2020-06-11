@@ -12,7 +12,9 @@
             <div class="col-9 col-md-11 row p-0">
                 <div class="col text">
                     <h5>{{item.title}}</h5>
-                    <p class="font-italic">{{item.story}}</p>
+                    {% if item.story == "" %}
+                        <p class="font-italic font-serif">&bdquo;{{item.story}}&quot;</p>
+                    {% endif %}
                     {{item.facts | markdownify}}
                 </div>
                 <div class="image col-md-3 p-md-0">
