@@ -12,7 +12,7 @@
             <div class="col-9 col-md-11 row p-0">
                 <div class="col text">
                     <h5>{{item.title}}</h5>
-                    {% if item.story == "" %}
+                    {% if item.story %}
                         <p class="font-italic font-serif">&bdquo;{{item.story}}&quot;</p>
                     {% endif %}
                     {{item.facts | markdownify}}
