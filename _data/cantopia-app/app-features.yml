@@ -1,7 +1,7 @@
 - title: "Timer"
   icon: "stopwatch"
   iconColor: "dark"
-  text: "Ca. alle 3 Minuten erinnert die App das Team daran zu würfeln, wodurch die Siedler neue Rohstoffe erhält."
+  text: "Ca. alle 3 Minuten erinnert die App das Team daran zu würfeln, wodurch die Siedler neue Rohstoffe erhalten."
 - title: "Offline-Modus"
   icon: "plane"
   iconColor: "danger"
