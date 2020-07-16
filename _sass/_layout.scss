@@ -63,6 +63,7 @@ hr {
 }
 article {
   margin-top: 58px;
+  overflow: hidden;
 }
 section{
   h4[id]::before, h3[id]::before{

@@ -25,4 +25,9 @@ section.section-gradient {
 }
 .cover-container {
     padding-bottom: 2rem;
+    .cover {
+        max-width: 700px;
+        width: 100%;
+    }
 }
+

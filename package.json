@@ -4,7 +4,7 @@
   "description": "fluhrer.games website",
   "scripts": {
     "serve": "bundle exec jekyll serve",
-    "live": "browser-sync start --proxy 'localhost:4000' --files '_site/**/*'",
+    "live": "browser-sync start --proxy http://127.0.0.1:4000 --files '_site/**/*'",
     "build": "bundle exec jekyll build && grunt",
     "install": "bundle install && npm install"
   },
@@ -19,6 +19,7 @@
     "npm": "^6.14.6"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "grunt": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",

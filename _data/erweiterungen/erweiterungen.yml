@@ -33,7 +33,7 @@
     "Auch die BürgermeisterIn müssen schneller mehr Rohstoffe ausgeben"
   ]
 - name: "Räuber & Gendarm"
-  id: "räuberUndGendarm"
+  id: "raeuberUndGendarm"
   text: "In dieser Erweiterung können die Siedler andere Siedlungen angreifen, um Rohstoffe zu erobern. Gleichzeitig müssen diese sich vor Angriffen anderer schützen. Allerdings wird dies durch gewisse Spielregeln auch ausgebremst, sodass nicht nur noch Rohstoffe gestohlen werden."
   advantages: [
     "Durch das Angreifen und Verteidigen von Siedlungen, kann es temporär einen starken Rohstoffschub geben, wodurch eine echt spannende Dynamik entstehen kann.",

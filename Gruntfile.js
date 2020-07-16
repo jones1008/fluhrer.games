@@ -52,7 +52,7 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: ["_site/index.html"],
-        tasks: ["concat", "uglify", "copy"]
+        tasks: ["concat", "purgecss", "copy", "uglify"]
       }
     }
   });

@@ -1,24 +1,35 @@
 .hero-image {
-  background-image: url(/assets/images/dice.jpg);
+  background-image: url(/assets/images/wuerfel-hero-image.jpg);
   background-position: center 80%;
   background-size: cover;
   height: 700px;
+
+  @include media-breakpoint-down(md){
+    height: 500px;
+  }
   .hero-text {
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    @include media-breakpoint-down(sm) {
+      padding-top: 3em;
+    }
+    #cantopia-logo{
+      width: 100%;
+      @include media-breakpoint-down(sm) {
+        width: 150%
+      }
+    }
+    .down-icon {
+      margin-top: -10px;
+      @include media-breakpoint-up(md){
+        font-size: 5em;
+      }
+    }
     .hero-subtitle {
       font-weight: normal !important;
       line-height: 1;
     }
-  }
-}
-
-@include media-breakpoint-down(md){
-  .hero-image {
-    height: 500px;
   }
 }
 
