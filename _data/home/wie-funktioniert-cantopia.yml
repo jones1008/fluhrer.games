@@ -3,18 +3,22 @@
   facts: "Jedes Team sitzt an einem Tisch und baut dort ihre eigene Siedlung auf."
   image: "home/mehrere_teams.png"
   imagealt: "Zeichnung Tische"
+  bigimage: false
 - title: "Rohstoffe"
   story: "Schnell erwirtschaften sich die Siedler verschiedene Rohstoffe, um die Siedlung aufzubauen."
   facts: "In festgelegten Zeitintervallen erhält jede Siedlung (durch Würfeln) neue Rohstoffe."
   image: "home/alle_rohstoffe.png"
   imagealt: "Rohstoffe in Cantopia: Holz, Stein, Eisen, Stroh"
+  bigimage: false
 - title: "Gebäude"
   story: "Mit diesen gewonnenen Rohstoffen bauen die Siedler ihre verschiedenen Gebäude."
   facts: "Die Teams haben eine große Auswahl an Gebäuden mit unterschiedlichen Funktionen, die strategisch gebaut werden sollen."
   image: "home/wohnhaus.png"
   imagealt: "Zeichnung Wohnhaus"
+  bigimage: false
 - title: "Handel"
   story: "Nach kurzer Zeit beginnen die einzelnen Siedlungen miteinander zu handeln und blühen so zu neuer Größe auf."
   facts: "Durch Interaktionen zwischen den Teams erlangt das Spiel eine eigene Dynamik."
   image: "home/haendler.png"
   imagealt: "Zeichnung zwei Händler"
+  bigimage: false

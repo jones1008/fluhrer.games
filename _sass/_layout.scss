@@ -110,7 +110,11 @@ section:nth-of-type(even) {
   .image {
     @extend .col-md-3;
     @extend .p-md-0;
+    @extend .text-center;
     padding-bottom: 1rem;
+    img{
+      max-width: 400px;
+    }
   }
   @include media-breakpoint-down(sm) {
     &:nth-child(even) {
@@ -155,13 +159,13 @@ section:nth-of-type(even) {
   @extend .d-flex;
   @extend .justify-content-center;
   > div {
-    img {
-      @extend .img-fluid;
-    }
     .image-subtitle {
       @extend .small-text;
       padding-top: 0.5rem;
     }
+  }
+  img {
+    max-width: 700px;
   }
 }
 

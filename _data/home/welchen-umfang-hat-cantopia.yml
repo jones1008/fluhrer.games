@@ -3,7 +3,7 @@
   icon: "user-friends fa-flip-horizontal"
   color: "primary"
 - title: "1,5 - 4 Stunden"
-  subtitle: "Die Spielzeit bei Cantopia ist variabel je nach gewählten [Erweiterungen](/sites/erweiterungen.html 'Cantopia hat mehrere Erweiterungen')."
+  subtitle: "Die Spielzeit bei Cantopia ist variabel je nach gewählten [Erweiterungen](/erweiterungen.html 'Cantopia hat mehrere Erweiterungen')."
   icon: "clock"
   color: "danger"
 - title: "5 - 600 Mitspieler"

@@ -8,7 +8,13 @@
                     <i class="{{item.icon}} fa-3x"></i>
                     <small>{{item.name}}</small>
                 </div>
-                <a class="text-white" href="{{item.link}}" target="_blank"><u>{{item.text}}</u></a>
+                {% if item.link %}
+                    <a class="text-white" href="{{item.link}}" target="_blank">
+                {% endif %}
+                    <u>{{item.text}}</u>
+                {% if item.link %}
+                    </a>
+                {% endif %}
             </div>
         {% endfor %}
     </div>
