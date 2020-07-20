@@ -4,3 +4,6 @@ sass:
     - _sass
     - node_modules
 exclude: ["package*.json", "Gruntfile.js"]
+url: "https://fluhrer.games"
+plugins:
+  - jekyll-sitemap
