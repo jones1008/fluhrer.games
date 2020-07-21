@@ -10,3 +10,7 @@
   icon: "recycle"
   color: "success"
   subtitle: "Wir versuchen beim Herstellen und Durchführen unseres Spiels soweit, wie möglich auf lokale Geschäfte zu unterstützen und unseren CO-2-Footprint gering zu halten."
+- title: "Praktikable Lösungen"
+  icon: "wrench"
+  color: "grey"
+  subtitle: "Bei Umsetzung des Spiels haben wir immer auf Intuitivität und das KISS-Prinzip (Keep it simple, stupid) geachtet."
