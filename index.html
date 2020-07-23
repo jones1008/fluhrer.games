@@ -7,24 +7,27 @@ description: Cantopia ist ein dynamisches, strategisches Großgruppenspiel für 
 <div class="hero-image">
     <div class="container text-center hero-text text-white">
 <!--        <div class="py-4">-->
-            <img src="/assets/images/cantopia-logo-shadow.svg" alt="Cantopia Logo" id="cantopia-logo">
-            <!--        <h1>Cantopia</h1>-->
-            <!--        <h3 class="hero-subtitle font-italic">-->
-            <!--            Settle down & rise up-->
-            <!--        </h3>-->
-            <a href="#was-ist-cantopia" class="text-white text-shadow">
-                <i class="down-icon fas fa-chevron-circle-down fa-4x"></i>
-            </a>
+        <img src="/assets/images/cantopia-logo-shadow.svg" alt="Cantopia Logo" id="cantopia-logo">
+        <!--        <h1>Cantopia</h1>-->
+        <!--        <h3 class="hero-subtitle font-italic">-->
+        <!--            Settle down & rise up-->
+        <!--        </h3>-->
+        <a href="#was-ist-cantopia" class="text-white text-shadow">
+            <i class="down-icon fas fa-chevron-circle-down fa-4x"></i>
+        </a>
 <!--        </div>-->
     </div>
 </div>
 
 <section>
     <div>
-        <h4 id="was-ist-cantopia">Was ist Cantopia?</h4>
-        <p class="text-center">Ein <strong>Gruppenspiel</strong> mit...</p>
+        <h1 class="page-heading text-center" id="was-ist-cantopia">Was ist Cantopia?</h1>
+        <p class="bigger-text text-center">Ein <strong>Gruppenspiel</strong> mit...</p>
         {% include comp/icons.html folder="home" data="was-ist-cantopia" %}
-        <p class="text-center">...für <strong>Jugendarbeit, Firmen- und Teamevents</strong>.</p>
+        <p class="bigger-text text-center">
+            ...für <strong>Jugendarbeit, Firmen- und Teamevents</strong><br>
+            entwickelt mit <span class="fg-red">&#9829;</span> von Fluhrer Games.
+        </p>
     </div>
 </section>
 
@@ -68,6 +71,10 @@ description: Cantopia ist ein dynamisches, strategisches Großgruppenspiel für 
 <section>
     <div>
         <h4 id="impressionen">Impressionen</h4>
+        <p class="text-center bigger-text">Folge Fluhrer Games auf Instagram!</p>
+        {% include comp/centered-button.html name="Zum Insta-Account" link="https://instagram.com/fluhrer.games" %}
+        <br>
+
         <!-- Place <div> tag where you want the feed to appear -->
         <div id="curator-feed-home-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
         <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
@@ -79,5 +86,8 @@ description: Cantopia ist ein dynamisches, strategisches Großgruppenspiel für 
                 e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
             })();
         </script>
+
+        <br>
+        {% include comp/centered-button.html name="Mehr zum Spiel" site="/das-spiel" %}
     </div>
 </section>

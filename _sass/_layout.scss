@@ -32,31 +32,35 @@ h1, h2, h3, h4 {
   @extend .font-serif;
 }
 h1 {
-  font-size: 4.8rem;
+  font-size: $h1-font-size;
 }
 h2 {
-  font-size: 4rem;
+  font-size: $h2-font-size;
 }
 h3 {
-  font-size: 3.2rem;
+  font-size: $h3-font-size;
 }
 h4 {
-  font-size: 2.4rem;
+  font-size: $h4-font-size;
 }
 h5 {
-  font-size: 1.75rem;
+  font-size: $h5-font-size;
 }
 h6 {
-  font-size: 1.25rem;
+  font-size: $h6-font-size;
 }
 .page-heading {
   @extend .font-italic;
   margin-bottom: 1rem;
+  font-size: 3.2rem !important;
 }
 .small-text {
   @extend .text-grey;
   line-height: 1.3rem;
   font-size: 1rem;
+}
+.bigger-text{
+  font-size: 1.2em;
 }
 hr {
   margin-top: 2rem;
@@ -67,7 +71,7 @@ article {
   overflow: hidden;
 }
 section{
-  h4[id]::before, h3[id]::before{
+  h1[id]::before, h4[id]::before, h3[id]::before{
     display: block;
     content: " ";
     margin-top: -100px;
@@ -181,3 +185,8 @@ section:nth-of-type(even) {
 //.crt-logo.crt-tag {
 //  display: none !important;
 //}
+
+// colors:
+.fg-red {
+  color: #d80000;
+}
