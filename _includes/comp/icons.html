@@ -1,6 +1,10 @@
-<div class="icons row text-center justify-content-center">
+<div class="icons row text-center justify-content-center mb-3">
     {% for item in site.data[include.folder].[include.data] %}
+        {% if forloop.length == 4 %}
+        <div class="col-md-6">
+        {% else %}
         <div class="col-md-4">
+        {% endif %}
             <i class="fas fa-{{item.icon}} fa-4x text-{{item.color}}"></i>
             <h5 class="icon-title font-weight-bold">{{item.title}}</h5>
             {{ item.subtitle | markdownify }}

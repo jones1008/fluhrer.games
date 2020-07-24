@@ -1,4 +1,3 @@
-<footer>
 <!--    <script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.min.js"></script>-->
 <!--    <script src="{{ site.baseurl }}/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
 
@@ -8,44 +7,34 @@
 <!--    <script src="{{ site.baseurl }}/node_modules/materialize-css/js/cash.js"></script>-->
 <!--    <script src="{{ site.baseurl }}/node_modules/materialize-css/js/materialbox.js"></script>-->
 
-    {% include kontakt.html %}
+<script src="/assets/main.js"></script>
 
-    <div class="text-center">
-        <a class="text-white" href="impressum.html">Impressum</a>&nbsp;&nbsp;
-        <a class="text-white" href="datenschutz.html">Datenschutz</a>
-    </div>
-    <br>
+<!-- Matomo -->
+<script type="text/javascript">
+    if (window.location.hostname === "fluhrer.games") {
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//matomo.fluhrers.de/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '3']);var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    }
+</script>
+<!-- End Matomo Code -->
 
-    <script src="/assets/main.js"></script>
-
-    <!-- Matomo -->
-    <script type="text/javascript">
-        if (window.location.hostname === "fluhrer.games") {
-            var _paq = window._paq || [];
-            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-                var u="//matomo.fluhrers.de/";
-                _paq.push(['setTrackerUrl', u+'matomo.php']);
-                _paq.push(['setSiteId', '3']);var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-            })();
-        }
-    </script>
-    <!-- End Matomo Code -->
-
-    <!-- Start Cookie Plugin -->
-    <script type="text/javascript">
-        window.cookieconsent_options = {
-            message: 'Diese Website nutzt Cookies, um bestmögliche Funktionalität bieten zu können.',
-            dismiss: 'Alles klar!',
-            learnMore: 'Mehr Infos',
-            link: 'datenschutz.html',
-            theme: 'light-floating'
-        };
-    </script>
-    <script type="text/javascript" src="//s3.amazonaws.com/valao-cloud/cookie-hinweis/script-v2.js"></script>
-    <!-- Ende Cookie Plugin -->
-
-</footer>
+<!-- Start Cookie Plugin -->
+<script type="text/javascript">
+    window.cookieconsent_options = {
+        message: 'Diese Website nutzt Cookies, um bestmögliche Funktionalität bieten zu können.',
+        dismiss: 'Alles klar!',
+        learnMore: 'Mehr Infos',
+        link: '/datenschutz/',
+        theme: 'light-floating'
+    };
+</script>
+<script type="text/javascript" src="//s3.amazonaws.com/valao-cloud/cookie-hinweis/script-v2.js"></script>
+<!-- Ende Cookie Plugin -->

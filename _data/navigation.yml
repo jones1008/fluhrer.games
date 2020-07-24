@@ -1,12 +1,12 @@
 - name: Home
   link: /
 - name: Das Spiel
-  link: /das-spiel.html
+  link: /das-spiel/
 - name: Erweiterungen
-  link: /erweiterungen.html
+  link: /erweiterungen/
 - name: App
-  link: /cantopia-app.html
-- name: Get Cantopia
-  link: /get-cantopia.html
+  link: /cantopia-app/
+#- name: Get Cantopia TODO: Get Cantopia hinzufügen
+#  link: /get-cantopia/
 - name: Über uns
-  link: /ueber-uns.html
+  link: /ueber-uns/

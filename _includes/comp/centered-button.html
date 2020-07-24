@@ -1,6 +1,6 @@
 <div class="text-center">
     <a class="btn btn-lg btn-primary text-white text-center"
-       href="{% if include.link %}{{include.link}}{% else %}/{{include.site}}.html{% endif %}"
+       href="{% if include.link %}{{include.link}}{% else %}{{include.site}}{% endif %}"
     >
         {{include.name}}
         &nbsp;

@@ -6,13 +6,13 @@
   bigimage: false
 - title: "Rohstoffe"
   story: "Schnell erwirtschaften sich die Siedler verschiedene Rohstoffe, um die Siedlung aufzubauen."
-  facts: "In festgelegten Zeitintervallen erhält jede Siedlung (durch Würfeln) neue Rohstoffe."
+  facts: "In festgelegten Zeitintervallen erhält jede Siedlung durch Würfeln neue Rohstoffe."
   image: "home/alle_rohstoffe.png"
   imagealt: "Rohstoffe in Cantopia: Holz, Stein, Eisen, Stroh"
   bigimage: false
 - title: "Gebäude"
   story: "Mit diesen gewonnenen Rohstoffen bauen die Siedler ihre verschiedenen Gebäude."
-  facts: "Die Teams haben eine große Auswahl an Gebäuden mit unterschiedlichen Funktionen, die strategisch gebaut werden sollen."
+  facts: "Die Teams haben eine große Auswahl an Gebäuden mit verschiedenen Funktionen, die unterschiedlich strategisch gebaut werden können."
   image: "home/wohnhaus.png"
   imagealt: "Zeichnung Wohnhaus"
   bigimage: false

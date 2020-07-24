@@ -1,29 +1,33 @@
 ---
 layout: default
 title: Cantopia - Ein strategisches Großgruppenspiel
+description: Cantopia ist ein dynamisches, strategisches Großgruppenspiel für Jugendarbeit, Firmen- und Teamevents entwickelt von Fluhrer Games. Das Spiel Cantopia verbindet Strategie und Teamwork begeistert Spieler jeden Alters.
 ---
 
 <div class="hero-image">
     <div class="container text-center hero-text text-white">
 <!--        <div class="py-4">-->
-            <img src="/assets/images/cantopia-logo-shadow.svg" alt="Cantopia Logo" id="cantopia-logo">
-            <!--        <h1>Cantopia</h1>-->
-            <!--        <h3 class="hero-subtitle font-italic">-->
-            <!--            Settle down & rise up-->
-            <!--        </h3>-->
-            <a href="#was-ist-cantopia" class="text-white text-shadow">
-                <i class="down-icon fas fa-chevron-circle-down fa-4x"></i>
-            </a>
+        <img src="/assets/images/cantopia-logo-shadow.svg" alt="Cantopia Logo" id="cantopia-logo">
+        <!--        <h1>Cantopia</h1>-->
+        <!--        <h3 class="hero-subtitle font-italic">-->
+        <!--            Settle down & rise up-->
+        <!--        </h3>-->
+        <a href="#was-ist-cantopia" class="text-white text-shadow">
+            <i class="down-icon fas fa-chevron-circle-down fa-4x"></i>
+        </a>
 <!--        </div>-->
     </div>
 </div>
 
 <section>
     <div>
-        <h4 id="was-ist-cantopia">Was ist Cantopia?</h4>
-        <p class="text-center">Ein <strong>Gruppenspiel</strong> mit...</p>
+        <h1 class="page-heading text-center" id="was-ist-cantopia">Was ist Cantopia?</h1>
+        <p class="bigger-text text-center">Ein <strong>Gruppenspiel</strong> mit...</p>
         {% include comp/icons.html folder="home" data="was-ist-cantopia" %}
-        <p class="text-center">...für <strong>Jugendarbeit, Firmen- und Teamevents</strong>.</p>
+        <p class="bigger-text text-center">
+            ...für <strong>Jugendarbeit, Firmen- und Teamevents</strong><br>
+            entwickelt mit <span class="fg-red">&#9829;</span> von Fluhrer Games.
+        </p>
     </div>
 </section>
 
@@ -31,7 +35,7 @@ title: Cantopia - Ein strategisches Großgruppenspiel
     <div>
         <h4 id="wie-funktioniert-cantopia">Wie funktioniert Cantopia?</h4>
         {% include comp/image-and-text.html folder="home" data="wie-funktioniert-cantopia" %}
-        {% include comp/centered-button.html name="Mehr zum Spiel" site="das-spiel" %}
+        {% include comp/centered-button.html name="Mehr zum Spiel" site="/das-spiel" %}
     </div>
 </section>
 
@@ -42,13 +46,14 @@ title: Cantopia - Ein strategisches Großgruppenspiel
     </div>
 </section>
 
-<section>
-    <div>
-        <h4 id="wie-kann-ich-cantopia-spielen">Wie kann ICH Cantopia spielen?</h4>
-        <p>Du kannst Cantopia ausleihen, kaufen, selber bauen oder wir kommen vorbei und leiten es an.</p>
-        {% include comp/centered-button.html name="Mehr dazu" site="get-cantopia" %}
-    </div>
-</section>
+<!--TODO: Get Cantopia hinzufügen-->
+<!--<section>-->
+<!--    <div>-->
+<!--        <h4 id="wie-kann-ich-cantopia-spielen">Wie kann ICH Cantopia spielen?</h4>-->
+<!--        <p>Du kannst Cantopia ausleihen, kaufen, selber bauen oder wir kommen vorbei und leiten es an.</p>-->
+<!--        {% include comp/centered-button.html name="Mehr dazu" site="/get-cantopia" %}-->
+<!--    </div>-->
+<!--</section>-->
 
 <section>
     <div>
@@ -62,19 +67,27 @@ title: Cantopia - Ein strategisches Großgruppenspiel
     </div>
 </section>
 
-<!--
+
 <section>
     <div>
         <h4 id="impressionen">Impressionen</h4>
-        <div id="curator-feed-fluhrergames-home-insta-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+        <p class="text-center bigger-text">Folge Fluhrer Games auf Instagram!</p>
+        {% include comp/centered-button.html name="Zum Insta-Account" link="https://instagram.com/fluhrer.games" %}
+        <br>
+
+        <!-- Place <div> tag where you want the feed to appear -->
+        <div id="curator-feed-home-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+        <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
         <script type="text/javascript">
-            /* curator-feed-fluhrergames-home-insta-feed-layout */
+            /* curator-feed-home-layout */
             (function(){
                 var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
-                i.src = "https://cdn.curator.io/published/928b5636-628d-4afc-b607-8701428777e7.js";
+                i.src = "https://cdn.curator.io/published/06e7efca-dc44-4762-b6b1-5c8d170b60db.js";
                 e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
             })();
         </script>
+
+        <br>
+        {% include comp/centered-button.html name="Mehr zum Spiel" site="/das-spiel" %}
     </div>
 </section>
--->
