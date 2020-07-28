@@ -1,7 +1,9 @@
 <div class="row gallery">
     {% for item in site.data[include.folder].[include.data] %}
-        <div class="col-12 col-sm-6 col-lg-3 px-4 gallery-item">
-            <img class="shadow materialboxed" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+        <div class="col-12 col-sm-6 col-lg-3 px-4 gallery-item text-center">
+            <a data-fslightbox="gallery1" href="/assets/images/{{item.image}}">
+                <img class="shadow" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+            </a>
         </div>
     {% endfor %}
 </div>

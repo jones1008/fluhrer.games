@@ -7,11 +7,12 @@ module.exports = function(grunt) {
         src: [
           "node_modules/jquery/dist/jquery.min.js",
           "node_modules/bootstrap/dist/js/bootstrap.min.js",
-          "node_modules/materialize-css/js/global.js",
-          "node_modules/materialize-css/js/anime.min.js",
-          "node_modules/materialize-css/js/component.js",
-          "node_modules/materialize-css/js/cash.js",
-          "node_modules/materialize-css/js/materialbox.js",
+          // "node_modules/materialize-css/js/global.js",
+          // "node_modules/materialize-css/js/anime.min.js",
+          // "node_modules/materialize-css/js/component.js",
+          // "node_modules/materialize-css/js/cash.js",
+          // "node_modules/materialize-css/js/materialbox.js",
+          "node_modules/fslightbox/index.js",
           "assets/_main.js",
         ],
         dest: "_site/assets/main.js"
@@ -19,7 +20,7 @@ module.exports = function(grunt) {
       css: {
         src: [
           "_site/assets/css/main.css",
-          "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+          "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
         ],
         dest: "_site/assets/css/main.css"
       }
@@ -41,7 +42,7 @@ module.exports = function(grunt) {
         cwd: 'node_modules/@fortawesome/fontawesome-free/webfonts',
         src: "**",
         dest: "_site/assets/webfonts"
-      }
+      },
     },
     uglify: {
       build: {
@@ -52,7 +53,7 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: ["_site/index.html"],
-        tasks: ["concat", "purgecss", "copy", "uglify"]
+        tasks: ["concat", "purgecss", "copy"]
       }
     }
   });
@@ -65,5 +66,5 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['concat', 'purgecss', 'copy', 'uglify']);
-  grunt.registerTask('serve', ['concat', 'purgecss', 'copy', 'uglify', 'watch']);
+  grunt.registerTask('serve', ['concat', 'purgecss', 'copy', 'watch']);
 };
