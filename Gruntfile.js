@@ -13,6 +13,7 @@ module.exports = function(grunt) {
           // "node_modules/materialize-css/js/cash.js",
           // "node_modules/materialize-css/js/materialbox.js",
           "node_modules/fslightbox/index.js",
+          "node_modules/@glidejs/glide/dist/glide.min.js",
           "assets/_main.js",
         ],
         dest: "_site/assets/main.js"
@@ -21,6 +22,8 @@ module.exports = function(grunt) {
         src: [
           "_site/assets/css/main.css",
           "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+          "node_modules/@glidejs/glide/dist/css/glide.core.min.css",
+          "node_modules/@glidejs/glide/dist/css/glide.theme.min.css",
         ],
         dest: "_site/assets/css/main.css"
       }

@@ -1,0 +1,30 @@
+.glide__track {
+    overflow: unset !important;
+}
+.glide__slide:not(.glide__slide--active) {
+    filter: opacity(0.3);
+}
+.glide__arrows {
+    .glide__arrow {
+        color: white;
+        /* background-color: white; */
+        box-shadow: none;
+        border: none;
+        @extend .text-shadow;
+        &.glide__arrow--right {
+            right: -1.3em;
+        }
+        &.glide__arrow--left {
+            left: -1.3em;
+        }
+    }
+}
+.glide__bullets {
+    .glide__bullet {
+        background-color: rgba(255, 255, 255, 0.7);
+        @extend .shadow;
+        &.glide__bullet--active {
+            background-color: white;
+        }
+    }
+}
