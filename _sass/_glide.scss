@@ -12,19 +12,29 @@
         border: none;
         @extend .text-shadow;
         &.glide__arrow--right {
+            @include media-breakpoint-up(lg) {
+                right: 9.3em;
+            }
             right: -1.3em;
         }
         &.glide__arrow--left {
+            @include media-breakpoint-up(lg) {
+                left: 9.3em;
+            }
             left: -1.3em;
         }
     }
 }
 .glide__bullets {
+    bottom: -1.5em !important;
     .glide__bullet {
-        background-color: rgba(255, 255, 255, 0.7);
-        @extend .shadow;
+        background-color: lightgrey;
         &.glide__bullet--active {
-            background-color: white;
+            background-color: black;
+        }
+        &:hover, &:focus {
+            border: 2px solid grey;
+            background-color: grey;
         }
     }
 }
