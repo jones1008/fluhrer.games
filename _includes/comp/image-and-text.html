@@ -4,21 +4,39 @@
             {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
             {% if thecycle == 'odd' %}
                 <div class="image">
-                    <img {% if item.bigimage %}class="materialboxed"{% endif %}
-                         width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+                    {% if item.bigimage %}
+                        <a data-fslightbox="image-and-text" href="/assets/images/{{item.image}}">
+                    {% endif %}
+                        <img width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+                    {% if item.imageCaption %}
+                        <div class="image-subtitle">{{item.imageCaption}}</div>
+                    {% endif %}
+                    {% if item.bigimage %}
+                        </a>
+                    {% endif %}
                 </div>
             {% endif %}
                 <div class="col-md-9">
-                    <h5>{{item.title}}</h5>
+                    {% if item.title %}
+                        <h5>{{item.title}}</h5>
+                    {% endif %}
                     {% if item.story %}
                         <p class="font-italic font-serif">&bdquo;{{item.story}}&quot;</p>
                     {% endif %}
-                    <p>{{item.facts}}</p>
+                    <p>{{item.facts|markdownify}}</p>
                 </div>
             {% if thecycle == 'even' %}
                 <div class="image">
-                    <img {% if item.bigimage %}class="materialboxed"{% endif %}
-                         width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+                    {% if item.bigimage %}
+                        <a data-fslightbox="image-and-text" href="/assets/images/{{item.image}}">
+                    {% endif %}
+                        <img width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+                    {% if item.imageCaption %}
+                        <div class="image-subtitle">{{item.imageCaption}}</div>
+                    {% endif %}
+                    {% if item.bigimage %}
+                        </a>
+                    {% endif %}
                 </div>
             {% endif %}
         </div>

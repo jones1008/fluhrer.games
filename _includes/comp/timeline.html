@@ -13,7 +13,7 @@
                 <div class="col text">
                     <h5>{{item.title}}</h5>
                     {% if item.story %}
-                        <p class="font-italic font-serif">&bdquo;{{item.story}}&quot;</p>
+                    <p class="font-italic font-serif">&bdquo;{{item.story}}&quot;</p>
                     {% endif %}
                     {{item.facts | markdownify}}
                 </div>
@@ -22,8 +22,6 @@
                     <a data-fslightbox="timeline" href="/assets/images/{{item.image}}">
                         <img width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
                     </a>
-<!--                    <img {% if item.bigimage %}class="materialboxed"{% endif %}-->
-<!--                         width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">-->
                 </div>
             </div>
         </div>

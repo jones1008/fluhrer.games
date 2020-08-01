@@ -32,7 +32,7 @@ module.exports = function(grunt) {
       css: {
         options: {
           content: ["_site/*.html", "_site/**/*.html"],
-          whitelist: ["materialbox-overlay"]
+          whitelist: ["materialbox-overlay", "glide__bullet--active"]
         },
         files: {
           "_site/assets/css/main.css": ["_site/assets/css/main.css"]

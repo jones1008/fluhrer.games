@@ -1,0 +1,26 @@
+- facts: "Die Teams müssen versuchen sich gegen die 3 Naturkatastrophen **Hochwasser**, **Erdbeben**, und **Feuer** schützen, die überraschend ausbrechen können und Gebäude zerstören."
+  image: "placeholder.png"
+  imagealt: "Frühwarnsystem im Einsatz"
+  imageCaption: "Das 3D-gedruckte Frühwarnsystem"
+  bigimage: true
+  extraInfo:
+    - title: "Hochwasser"
+      facts: "Die Teams schützen die Siedlung gegen Hochwasser mit **Stadtmauern** und **Sandsäcken**."
+      image: "placeholder.png"
+      imagealt: "Sansack und Stadtmauern an einer Siedlung"
+      bigimage: true
+    - title: "Erdbeben"
+      facts: "Das **Erdbebensiegel** bestätigt den einen erdbebensicheren Bau von Wohnhäusern."
+      image: "placeholder.png"
+      imagealt: "Wohnhaus mit Erdbebensiegel"
+      bigimage: true
+    - title: "Feuer"
+      facts: "Die Feuerwehr **schützt** eine gewisse Anzahl von Gebäuden **vor Bränden**."
+      image: "placeholder.png"
+      imagealt: "Feuerwehr-Spielkarte"
+      bigimage: true
+    - title: "Frühwarnsystem"
+      facts: "Das Frühwarnsystem füllt sich mit Holzmurmeln durch **Paschs beim Würfeln**. Eine Naturkatastrophe bricht aus, sobald es das Frühwarnsystem anzeigt."
+      image: "placeholder.png"
+      imagealt: "Frühwarnsystem mit Würfel"
+      bigimage: true
