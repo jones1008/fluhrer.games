@@ -1,0 +1,16 @@
+- facts: "Ein Team kann ein anderes Team überfallen und Rohstoffe stehlen. Wenn sich das angegriffene Team entsprechend verteidigt, kann ein Überfall abgewehrt werden."
+  image: "erweiterungen/schere-stein-papier.JPG"
+  imagealt: "Kloster und Universitäts-Spielkarten"
+  imageCaption: "Kloster und Universität"
+  bigimage: true
+  extraInfo:
+    - title: "Spielfiguren"
+      facts: "Die schwarzen Spielfiguren stellen die Räuber dar, die weißen die Gendarme. Überfällt ein Team ein anderes wird um jede Spielfigur Schere-Stein-Papier gespielt."
+      image: "erweiterungen/schwarz-und-weisse-spielfiguren.JPG"
+      imagealt: "Schwarze und weiße Spielfiguren"
+      bigimage: true
+    - title: "Gendarmerie und Krankenhaus"
+      facts: "Mit einer Gendarmerie ist ein Team befähigt anzugreifen, im Krankenhaus können Spielfiguren nach dem Kampf geheilt werden"
+      image: "erweiterungen/krankenhaus-gendarmerie.JPG"
+      imagealt: "Krankenhaus- und Gendarmerie-Spielkärtchen"
+      bigimage: true

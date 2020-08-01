@@ -1,5 +1,16 @@
 - facts: "Durch die Investition in **Bildungseinrichtungen** können die Teams die Forschung vorantreiben und dadurch z.B. die **Produktivität** vom Bergwerk **verbessern** und so schneller Steine abbauen. Die Teams bekommen durch den Bau von Kirche und Kloster **Glaubenskarten**, mit denen Sie viele verschiedene Vorteile erhalten, wie z.B. extra Siegerpunkte."
-  image: "placeholder.png"
+  image: "erweiterungen/kloster-und-uni.JPG"
   imagealt: "Kloster und Universitäts-Spielkarten"
   imageCaption: "Kloster und Universität"
   bigimage: true
+  extraInfo:
+    - title: "Fakultäten"
+      facts: "Mit der Gründung von Fakultäten investieren die Teams in die einzelner Fachbereiche."
+      image: "erweiterungen/uni-und-fakultaeten.JPG"
+      imagealt: "Universität mit allen Fakultäten"
+      bigimage: true
+    - title: "Vorteile"
+      facts: "Dadurch kann beispielsweise die Holzproduktion eines Sägewerks verdoppelt werden."
+      image: "erweiterungen/saegewerk-zwei-holz.JPG"
+      imagealt: "Sägewerk mit 2 Holz"
+      bigimage: true

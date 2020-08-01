@@ -1,56 +1,10 @@
-- name: "Grundspiel"
-  id: "grundspiel"
-  text: "Das Grundspiel ist die Grundlage von Siedler. Hauptbestandteil dieses Spiels ist es Rohstoffe zu erwerben, damit zu handeln um sich davon Gebäude zu kaufen. Ziel des Spieles ist es, so viele Siegerpunkte zu sammeln und natürlich soll jeder Siedler stolz sein, wenn sich die eigene Siedlung das wertvollste Gebäude, das Schloss, leisten kann."
-  advantages: [
-    "Es ist einfach zu spielen",
-    "Die Siedler kommen schnell rein und haben viel Spaß aus der Kombination, Rohstoffe erwerben/handeln, Wachstum der Siedlung und rennen zwischen Siedlungen und dem Bauamt."
-  ]
-  disadvantages: [
-    "Nur das Spielen des Grundspieles kann relativ eintönig werden, da wenig Dynamik mit im Spiel ist."
-  ]
-- name: "Naturkatastrophen"
-  id: "naturkatastrophen"
-  text: "Bei dieser Erweiterung wird durch eine Würfelsystematik Murmeln in Röhrchen des Frühwarnsystems geworfen, welches anzeigt wann vermutlich die nächste Naturkatastrophe ausbrechen wird. Hierbei können die Naturkatastrophen Feuer, Hochwasser und Erdbeben Teile der Siedlung/Gebäude zerstören. Gegen jede einzelne Naturkatastrophe kann man sich individuell schützen. Hierfür werden allerdings weitere Rohstoffe benötigt, um bspw. eine Feuerwehr zu kaufen, die Wohnhäuser zu verstärken oder in den Hochwasserschutz zu investieren."
-  advantages: [
-    "Diese Erweiterung wurde schon sehr oft gespielt und ist sehr elaboriert.",
-    "Gerade das individuelle Ausbrechen von verschiedenen Naturkatastrophen bringt eine unglaubliche Dynamik in das Spiel.",
-    "Das Abwägen wie die begrenzten Rohstoffe investiert werden sollen – Bau weiterer Gebäude  Schneller Wachstum oder der Schutz der Siedlung vor Naturkatastrophen.",
-    "Ist eine spannende und spaßige Herausforderung."
-  ]
-  disadvantages: [
-    "Das Einwerfen von Kugeln nach jedem Spielen ist ein weiterer Aufwand für den BürgermeisterIn während des Spiels.",
-    "Bei dieser Erweiterung werden viele weitere Materialien benötigt wodurch sich der Handlings Aufwand erhöht."
-  ]
-- name: "Glaube & Bildung"
-  id: "glaubeUndBildung"
-  text: "Dies ist eine kleine Erweiterung, welche einfach zu verstehen ist, aber gleichzeitig den Spielenden einen enormen Boost im Spielgeschehen ermöglicht. Besonders die Investition in den Bereich Bildung erhöht den Erhalt von weiteren Rohstoffen enorm. Im Bereich Glaube erhalten die Siedler beim Kauf von spirituellen Gebäuden (Kirche/Kloster) individuelle Vorteile ähnlich wie bei Ereigniskarten bei Monopoly."
-  advantages: [
-    "Gerade durch die vielen Rohstoffe, welche die Siedler im Bereich Bildung bekommen, wird das Spiel immer schneller. Die Siedler spielen sich noch stärker in einen Rausch wie bei anderen Erweiterungen.",
-    "Die Siedler kommen schnell rein und haben viel Spaß aus der Kombination, Rohstoffe erwerben/handeln, Wachstum der Siedlung und rennen zwischen Siedlungen und dem Bauamt."
-  ]
-  disadvantages: [
-    "Das schnelle Spielen könnte für den ein oder anderen Spieler zu schnell werden.",
-    "Auch die BürgermeisterIn müssen schneller mehr Rohstoffe ausgeben"
-  ]
-- name: "Räuber & Gendarm"
-  id: "raeuberUndGendarm"
-  text: "In dieser Erweiterung können die Siedler andere Siedlungen angreifen, um Rohstoffe zu erobern. Gleichzeitig müssen diese sich vor Angriffen anderer schützen. Allerdings wird dies durch gewisse Spielregeln auch ausgebremst, sodass nicht nur noch Rohstoffe gestohlen werden."
-  advantages: [
-    "Durch das Angreifen und Verteidigen von Siedlungen, kann es temporär einen starken Rohstoffschub geben, wodurch eine echt spannende Dynamik entstehen kann.",
-    "Langfristiger Lerneffekt möglich: Krieg ergibt keinen Sinn."
-  ]
-  disadvantages: [
-    "Das ist wohl die schwierigste Erweiterung. Wenn man allerdings die Würfelsystematik verstanden hat (Würfelsystem ähnlich wie beim Spiel „Risiko“), dann kann es richtig Spaß machen.",
-    "Allerdings nicht für noch zu junge Kids sinnvoll.",
-    "Auch die BürgermeisterIn müssen vermehrt bei Angriffen aufpassen können."
-  ]
-- name: "Zufriedenheit"
-  id: "zufriedenheit"
-  text: "Hier müssen die Siedler auf die Zufriedenheit der eigenen Bevölkerung achten. Wenn diese negativ ist – ausgelöst durch zu viele Bewohner – brechen Streiks aus. Siedler erhalten weniger Rohstoffe. Wenn die Zufriedenheit positiv ist, erhalten die Siedler den extra Rohstoff Gold, wodurch diese sich mehr kaufen können."
-  advantages: [
-    "Lerneffekt: Wer auf die Zufriedenheit der Bevölkerung achtet bekommt Vorteile.",
-    "Weitere spannende Herausforderung beim Spielen auf die Zufriedenheit der Bevölkerung zu achten."
-  ]
-  disadvantages: [
-    "Die jüngste unserer Erweiterungen, welches an manchen Stellschrauben noch ein bisschen angepasst werden muss. Dies wird allerdings noch bis Ende Juli geschehen, sodass ihr die Erweiterung in einer guten Version spielen könnt."
-  ]
+- image: "erweiterungen/grundspiel-cover.jpg"
+  imagealt: "Cover Cantopia Grundspiel"
+- image: "erweiterungen/naturkatastrophen-cover.jpg"
+  imagealt: "Cover Cantopia Naturkatastrophen"
+- image: "erweiterungen/glaubeUndBildung-cover.jpg"
+  imagealt: "Cover Cantopia Glaube & Bildung"
+- image: "erweiterungen/raeuberUndGendarm-cover.jpg"
+  imagealt: "Cover Cantopia Räuber & Gendarm"
+#- image: "erweiterungen/zufriedenheit-cover.jpg"
+#  imagealt: "Cover Cantopia Zufriedenheit"

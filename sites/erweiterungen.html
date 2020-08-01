@@ -7,66 +7,12 @@ permalink: /erweiterungen/
 <section>
     <div>
         <h1 class="page-heading">Erweiterungen</h1>
-        <div class="glide">
-            <div class="glide__track" data-glide-el="track">
-                <ul class="glide__slides">
-                    {% for erweiterung in site.data.erweiterungen.erweiterungen %}
-                    <li class="glide__slide">
-<!--                        <a data-fslightbox="erweiterungen"-->
-<!--                           href="/assets/images/erweiterungen/{{erweiterung.id}}-cover.jpg">-->
-                        <div class="image-big">
-                            <div>
-                                <img src="/assets/images/erweiterungen/{{erweiterung.id}}-cover.jpg" class="w-100"
-                                     alt="Cover Cantopia Erweiterung {{item.name}}">
-                            </div>
-                        </div>
-<!--                        </a>-->
-                    </li>
-                    {% endfor %}
-                </ul>
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                    {% for erweiterung in site.data.erweiterungen.erweiterungen %}
-                        <button class="glide__bullet" data-glide-dir="={{forloop.index0}}"></button>
-                    {% endfor %}
-                </div>
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-                        <i class="fas fa-chevron-circle-left fa-2x"></i>
-                    </button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-                        <i class="fas fa-chevron-circle-right fa-2x"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+        {% include comp/glide.html data=site.data.erweiterungen.erweiterungen %}
         <br>
         <p>
             Alle 4 Erweiterungen können beliebig mit dem Grundspiel kombiniert werden. Je mehr, desto dynamischer und
             anspruchsvoller das Spielgeschehen.
         </p>
-
-        <!--        <p>-->
-<!--            Zum Grundspiel von Cantopia gibt es noch 4 Erweiterungen.-->
-<!--            Diese können beliebig mit dem Grundspiel kombiniert werden.-->
-<!--            Je mehr Erweiterungen gleichzeitig gespielt werden, desto dynamischer und komplexer wird das Spielgeschehen.-->
-<!--        </p>-->
-<!--        <p>-->
-<!--            Die Rollen im Spiel sind bei Cantopia folgende:-->
-<!--        </p>-->
-<!--        <table class="table">-->
-<!--            <tr>-->
-<!--                <th>Siedler: </th>-->
-<!--                <td>Teilnehmer des Spiels</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <th>Siedlung: </th>-->
-<!--                <td>Eine Gruppe bestehend aus mehreren Siedlern</td>-->
-<!--            </tr>-->
-<!--            <tr>-->
-<!--                <th>Bürgermeister: </th>-->
-<!--                <td>Betreuer einer Siedlung</td>-->
-<!--            </tr>-->
-<!--        </table>-->
     </div>
 </section>
 <section>
@@ -80,6 +26,13 @@ permalink: /erweiterungen/
     <div>
         <h4>Glaube & Bildung</h4>
         {% include erweiterungen.html folder="erweiterungen" data="glaubeUndBildung" %}
+    </div>
+</section>
+
+<section>
+    <div>
+        <h4>Räuber & Gendarm</h4>
+        {% include erweiterungen.html folder="erweiterungen" data="raeuberUndGendarm" %}
     </div>
 </section>
 
