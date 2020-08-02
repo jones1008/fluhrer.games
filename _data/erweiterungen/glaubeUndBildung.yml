@@ -10,7 +10,7 @@
       imagealt: "Universität mit allen Fakultäten"
       bigimage: true
     - title: "Vorteile"
-      facts: "Dadurch kann beispielsweise die Holzproduktion eines Sägewerks verdoppelt werden."
+      facts: "Dadurch kann beispielsweise die **Holzproduktion** eines Sägewerks **verdoppelt** werden."
       image: "erweiterungen/saegewerk-zwei-holz.JPG"
       imagealt: "Sägewerk mit 2 Holz"
       bigimage: true

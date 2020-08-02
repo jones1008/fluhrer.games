@@ -42,6 +42,9 @@ h3 {
 }
 h4 {
   font-size: $h4-font-size;
+  @include media-breakpoint-down(sm) {
+    font-size: $h4-font-size-mobile !important;
+  }
 }
 h5 {
   font-size: $h5-font-size;
@@ -52,7 +55,10 @@ h6 {
 .page-heading {
   @extend .font-italic;
   margin-bottom: 1rem;
-  font-size: 3.2rem !important;
+  font-size: $h3-font-size !important;
+  @include media-breakpoint-down(sm) {
+    font-size: $h1-font-size-mobile !important;
+  }
 }
 .small-text {
   @extend .text-grey;
