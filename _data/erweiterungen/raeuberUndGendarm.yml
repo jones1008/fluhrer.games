@@ -1,7 +1,7 @@
 - facts: "Ein Team kann ein anderes Team überfallen und Rohstoffe stehlen. Wenn sich das angegriffene Team entsprechend verteidigt, kann ein Überfall abgewehrt werden."
   image: "erweiterungen/schere-stein-papier.JPG"
-  imagealt: "Kloster und Universitäts-Spielkarten"
-  imageCaption: "Kloster und Universität"
+  imagealt: "Schere Stein Papier an einer Siedlung"
+  imageCaption: "Ein Überfall eines Teams"
   bigimage: true
   extraInfo:
     - title: "Spielfiguren"
