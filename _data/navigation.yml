@@ -6,7 +6,7 @@
   link: /erweiterungen/
 - name: App
   link: /cantopia-app/
-#- name: Get Cantopia TODO: Get Cantopia hinzufügen
-#  link: /get-cantopia/
+- name: Get Cantopia
+  link: /get-cantopia/
 - name: Über uns
   link: /ueber-uns/
