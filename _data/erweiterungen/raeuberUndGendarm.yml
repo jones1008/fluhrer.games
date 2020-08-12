@@ -10,7 +10,7 @@
       imagealt: "Schwarze und weiße Spielfiguren"
       bigimage: true
     - title: "Gendarmerie und Krankenhaus"
-      facts: "Mit einer Gendarmerie ist ein Team befähigt anzugreifen, im Krankenhaus können Spielfiguren nach dem Kampf geheilt werden"
+      facts: "Mit einer Gendarmerie oder einer Wache ist ein Team befähigt anzugreifen, im Krankenhaus und Lazarett können Spielfiguren nach dem Kampf geheilt werden"
       image: "erweiterungen/krankenhaus-gendarmerie.JPG"
       imagealt: "Krankenhaus- und Gendarmerie-Spielkärtchen"
       bigimage: true
