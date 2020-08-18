@@ -7,7 +7,7 @@
                     {% if item.bigimage %}
                         <a data-fslightbox="image-and-text" href="/assets/images/{{item.image}}">
                     {% endif %}
-                        <img width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+                        <img src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
                     {% if item.imageCaption %}
                         <div class="image-subtitle">{{item.imageCaption}}</div>
                     {% endif %}
@@ -23,14 +23,14 @@
                     {% if item.story %}
                         <p class="font-italic font-serif">&bdquo;{{item.story}}&quot;</p>
                     {% endif %}
-                    <p>{{item.facts|markdownify}}</p>
+                    {{item.facts|markdownify}}
                 </div>
             {% if thecycle == 'even' %}
                 <div class="image">
                     {% if item.bigimage %}
                         <a data-fslightbox="image-and-text" href="/assets/images/{{item.image}}">
                     {% endif %}
-                        <img width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+                        <img src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
                     {% if item.imageCaption %}
                         <div class="image-subtitle">{{item.imageCaption}}</div>
                     {% endif %}

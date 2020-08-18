@@ -218,4 +218,7 @@ section:nth-of-type(even) {
     @extend .small-text;
     padding-top: 0.5rem;
   }
+  img {
+    width: 100%;
+  }
 }
