@@ -11,3 +11,10 @@
     background-color: white;
   }
 }
+
+// ie fix for navbar
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .navbar{
+    background-color: white;
+  }
+}
