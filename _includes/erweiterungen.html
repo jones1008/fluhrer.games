@@ -1,11 +1,11 @@
 <div>
     {% for item in site.data[include.folder].[include.data] %}
-        <div class="image-and-text row">
+        <div class="image-and-text row py-0">
             <div class="image">
                 {% if item.bigimage %}
                 <a data-fslightbox="erweiterungen" href="/assets/images/{{item.image}}">
                     {% endif %}
-                    <img width="100%" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
+                    <img class="no-height" src="/assets/images/{{item.image}}" alt="{{item.imagealt}}">
                     {% if item.imageCaption %}
                     <div class="image-subtitle">{{item.imageCaption}}</div>
                     {% endif %}
@@ -17,7 +17,7 @@
                 {% if item.title %}
                     <h5>{{item.title}}</h5>
                 {% endif %}
-                <p>{{item.facts|markdownify}}</p>
+                {{item.facts|markdownify}}
             </div>
         </div>
         {% if item.extraInfo %}
@@ -34,7 +34,7 @@
                             </div>
                             <div class="image col-md-3 p-md-0">
                                 <a data-fslightbox="erweiterungen" href="/assets/images/{{info.image}}">
-                                    <img width="100%" src="/assets/images/{{info.image}}" alt="{{info.imagealt}}">
+                                    <img src="/assets/images/{{info.image}}" alt="{{info.imagealt}}">
                                 </a>
                             </div>
                         </div>

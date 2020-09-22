@@ -218,4 +218,17 @@ section:nth-of-type(even) {
     @extend .small-text;
     padding-top: 0.5rem;
   }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    &.no-height {
+      height: unset;
+    }
+  }
+  // ie fix for images inside a tag
+  a {
+    width: 100%;
+    height: 100%;
+  }
 }
