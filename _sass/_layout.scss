@@ -19,7 +19,7 @@
 }
 .italic-serif{
   @extend .font-serif;
-  @extend .font-italic;
+  @extend .fst-italic;
 }
 body {
   font-family: Arial, sans-serif;
@@ -29,7 +29,7 @@ p {
   line-height: 1.3;
 }
 h1, h2, h3, h4, h5, h6 {
-  @extend .font-weight-bold;
+  @extend .fw-bold;
   @extend .text-break;
 }
 h1, h2, h3, h4 {
@@ -57,7 +57,7 @@ h6 {
   font-size: $h6-font-size;
 }
 .page-heading {
-  @extend .font-italic;
+  @extend .fst-italic;
   margin-bottom: 1rem;
   font-size: $h3-font-size !important;
   @include media-breakpoint-down(sm) {
@@ -104,7 +104,7 @@ section {
     padding-top: 2em;
     padding-bottom: 2em;
     > h4 {
-      @extend .font-italic;
+      @extend .fst-italic;
       margin-bottom: 1.5rem;
     }
   }
@@ -136,7 +136,7 @@ section:nth-of-type(even) {
       max-width: 400px;
     }
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     &:nth-child(even) {
       display: flex;
       flex-direction: column-reverse;
@@ -173,10 +173,10 @@ section:nth-of-type(even) {
 
 // others:
 .vertical-ruler {
-  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
   height: 100%;
   margin-bottom: 0.5rem;
-  position: absolute;
+  //position: absolute;
 }
 
 .image-big {
@@ -230,5 +230,6 @@ section:nth-of-type(even) {
   a {
     width: 100%;
     height: 100%;
+    text-decoration: none;
   }
 }

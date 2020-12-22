@@ -5,13 +5,7 @@ module.exports = function(grunt) {
     concat: {
       js: {
         src: [
-          "node_modules/jquery/dist/jquery.min.js",
           "node_modules/bootstrap/dist/js/bootstrap.min.js",
-          // "node_modules/materialize-css/js/global.js",
-          // "node_modules/materialize-css/js/anime.min.js",
-          // "node_modules/materialize-css/js/component.js",
-          // "node_modules/materialize-css/js/cash.js",
-          // "node_modules/materialize-css/js/materialbox.js",
           "node_modules/fslightbox/index.js",
           "node_modules/@glidejs/glide/dist/glide.min.js",
           "assets/_main.js",

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "fluhrer.games website",
   "scripts": {
-    "serve": "bundle exec jekyll serve",
-    "live": "browser-sync start --proxy http://127.0.0.1:4000 --files '_site/**/*'",
+    "serve": "echo don't forget to execute 'grunt serve' && bundle exec jekyll serve",
+    "live": "echo don't forget to execute 'grunt serve' && browser-sync start --proxy http://127.0.0.1:4000 --files '_site/**/*'",
     "build": "bundle exec jekyll build && grunt",
     "install": "bundle install && npm install"
   },
@@ -13,9 +13,9 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@glidejs/glide": "^3.4.1",
-    "bootstrap": "^4.5.0",
-    "fslightbox": "^3.1.0",
-    "jquery": "^3.5.1"
+    "alpinejs": "^2.8.0",
+    "bootstrap": "^5.0.0-beta1",
+    "fslightbox": "^3.1.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.12",
