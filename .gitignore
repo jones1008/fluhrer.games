@@ -253,3 +253,5 @@ dist
 .yarn/build-state.yml
 .pnp.*
 
+/.idea/deployment.xml
+/.idea/codeStyles/codeStyleConfig.xml
