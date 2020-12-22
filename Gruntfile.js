@@ -40,11 +40,19 @@ module.exports = function(grunt) {
         src: "**",
         dest: "_site/assets/webfonts"
       },
+      alpinejs: {
+        src: 'node_modules/alpinejs/dist/alpine.js',
+        dest: '_site/assets/alpine.min.js'
+      }
     },
     uglify: {
       build: {
         src: '_site/assets/main.js',
         dest: '_site/assets/main.js'
+      },
+      alpinejs: {
+        src: '_site/assets/alpine.min.js',
+        dest: '_site/assets/alpine.min.js'
       }
     },
     watch: {
