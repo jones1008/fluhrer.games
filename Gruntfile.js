@@ -3,14 +3,24 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     concat: {
-      js: {
-        src: [
-          "node_modules/bootstrap/dist/js/bootstrap.min.js",
-          "node_modules/fslightbox/index.js",
-          "node_modules/@glidejs/glide/dist/glide.min.js",
-          "assets/_main.js",
-        ],
+      mainjs: {
+        src: ["node_modules/bootstrap/dist/js/bootstrap.min.js"],
         dest: "_site/assets/main.js"
+      },
+      fslightbox: {
+        src: ["node_modules/fslightbox/index.js"],
+        dest: "_site/assets/fslightbox.js"
+      },
+      glide: {
+        src: [
+          "node_modules/@glidejs/glide/dist/glide.min.js",
+          "assets/_glide.config.js"
+        ],
+        dest: "_site/assets/glide.js"
+      },
+      alpinejs: {
+        src: ['node_modules/alpinejs/dist/alpine.js'],
+        dest: '_site/assets/alpine.js'
       },
       css: {
         src: [
@@ -39,20 +49,24 @@ module.exports = function(grunt) {
         cwd: 'node_modules/@fortawesome/fontawesome-free/webfonts',
         src: "**",
         dest: "_site/assets/webfonts"
-      },
-      alpinejs: {
-        src: 'node_modules/alpinejs/dist/alpine.js',
-        dest: '_site/assets/alpine.min.js'
       }
     },
     uglify: {
-      build: {
+      mainjs: {
         src: '_site/assets/main.js',
         dest: '_site/assets/main.js'
       },
+      fslightbox: {
+        src: "_site/assets/fslightbox.js",
+        dest: "_site/assets/fslightbox.js",
+      },
+      glide: {
+        src: "_site/assets/glide.js",
+        dest: "_site/assets/glide.js",
+      },
       alpinejs: {
-        src: '_site/assets/alpine.min.js',
-        dest: '_site/assets/alpine.min.js'
+        src: '_site/assets/alpine.js',
+        dest: '_site/assets/alpine.js'
       }
     },
     watch: {

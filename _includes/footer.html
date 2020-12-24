@@ -1,13 +1,9 @@
-<!--    <script src="{{ site.baseurl }}/node_modules/jquery/dist/jquery.min.js"></script>-->
-<!--    <script src="{{ site.baseurl }}/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
-
-<!--    <script src="{{ site.baseurl }}/node_modules/materialize-css/js/global.js"></script>-->
-<!--    <script src="{{ site.baseurl }}/node_modules/materialize-css/js/anime.min.js"></script>-->
-<!--    <script src="{{ site.baseurl }}/node_modules/materialize-css/js/component.js"></script>-->
-<!--    <script src="{{ site.baseurl }}/node_modules/materialize-css/js/cash.js"></script>-->
-<!--    <script src="{{ site.baseurl }}/node_modules/materialize-css/js/materialbox.js"></script>-->
-
 <script src="/assets/main.js"></script>
+{% if page.dependencies %}
+    {% for dependency in page.dependencies %}
+        <script src="/assets/{{dependency}}.js"></script>
+    {% endfor %}
+{% endif %}
 
 <!-- Matomo -->
 <script>
