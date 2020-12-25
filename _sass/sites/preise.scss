@@ -1,0 +1,20 @@
+.preise {
+    .radio {
+        p {
+            @extend .small-text;
+            @extend .text-grey;
+            @extend .ps-3;
+        }
+    }
+    input[type=number] {
+        width: 60px;
+    }
+    table {
+        td:nth-child(1), th:nth-child(1) {
+            padding-right: 2em;
+        }
+        td:nth-child(2), th:nth-child(2){
+            text-align: right;
+        }
+    }
+}

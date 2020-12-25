@@ -18,9 +18,12 @@ module.exports = function(grunt) {
         ],
         dest: "_site/assets/glide.js"
       },
-      alpinejs: {
-        src: ['node_modules/alpinejs/dist/alpine.js'],
-        dest: '_site/assets/alpine.js'
+      alpinePreise: {
+        src: [
+            'node_modules/alpinejs/dist/alpine.js',
+            'assets/_alpine.preise.js'
+        ],
+        dest: '_site/assets/alpinePreise.js'
       },
       css: {
         src: [
@@ -64,9 +67,9 @@ module.exports = function(grunt) {
         src: "_site/assets/glide.js",
         dest: "_site/assets/glide.js",
       },
-      alpinejs: {
-        src: '_site/assets/alpine.js',
-        dest: '_site/assets/alpine.js'
+      alpinePreise: {
+        src: '_site/assets/alpinePreise.js',
+        dest: '_site/assets/alpinePreise.js'
       }
     },
     watch: {

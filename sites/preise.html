@@ -1,0 +1,100 @@
+---
+layout: default
+title: Cantopia - Preisrechner
+permalink: /preise/
+dependencies: [alpinePreise]
+---
+
+<section>
+    <div x-data="preise()" class="preise">
+        <h1 class="page-heading">Preisberechnung Cantopia</h1>
+
+        <p>Hier kannst du dir einen ungefähren Preis für das Spiel Cantopia zusammenrechnen:</p>
+        <br>
+
+        <h6>
+            Wähle das Paket aus, was am Besten für euch passt:
+            <a href="/get-cantopia" target="_blank" title="Mehr Infos zu den Paketen">
+                <i class="fas fa-info-circle text-grey"></i>
+            </a>
+        </h6>
+        <fieldset class="radio">
+            <input type="radio" id="paket-ausleihen" value="ausleihen" x-model="paket">
+            <label for="paket-ausleihen">Ausleihen</label><br>
+            <p>Ihr leiht das Spiel aus und leitet es selbständig an.</p>
+
+            <input type="radio"id="paket-anleiten" value="anleiten" x-model="paket">
+            <label for="paket-anleiten">Anleiten</label><br>
+            <p>Wir kommen vorbei und spielen es mit euch.</p>
+        </fieldset>
+        <br>
+
+        <h6>
+            Wähle eine ungefähre Anzahl der Teilnehmer:
+        </h6>
+        <p>
+            <label for="anzahl-spielende">
+                Anzahl Spielende:
+            </label>
+            <input type="number" x-model="anzahlSpielende" id="anzahl-spielende" :min="minSpielende" max="1000">
+            <span class="small-text text-grey">
+                (ca. <span x-text="anzahlTeams()"></span> Teams mit je <span x-text="teamGroesse()"></span> Spielenden)
+            </span>
+        </p>
+        <br>
+
+        <h6>
+            Wähle die Erweiterungen aus, mit denen ihr spielen wollt:
+            <a href="/erweiterungen" target="_blank" title="Mehr Infos zu den Erweiterungen">
+                <i class="fas fa-info-circle text-grey"></i>
+            </a>
+        </h6>
+        <fieldset>
+            <input type="checkbox" id="naturkatastrophen" x-model="erweiterungen" value="naturkatastrophen">
+            <label for="naturkatastrophen"><p>Naturkatastrophen</p></label>
+            <br>
+            <input type="checkbox" id="glaubeUndBildung" x-model="erweiterungen" value="glaubeUndBildung">
+            <label for="glaubeUndBildung"><p>Glaube & Bildung</p></label>
+            <br>
+            <input type="checkbox" id="raeuberUndGendarm" x-model="erweiterungen" value="raeuberUndGendarm">
+            <label for="raeuberUndGendarm"><p>Räuber & Gendarm</p></label>
+            <br>
+<!--            <input type="checkbox" id="zufriedenheit" x-model="erweiterungen" value="zufriedenheit">-->
+<!--            <label for="zufriedenheit"><p>Zufriedenheit</p></label>-->
+<!--            <br>-->
+        </fieldset>
+        <br>
+
+        <h6>Seid ihr in der Jugendarbeit tätig?</h6>
+        <p>
+            <input type="checkbox" id="jugendarbeit" x-model="jugendarbeit">
+            <label for="jugendarbeit">Ja</label>
+        </p>
+
+        <hr>
+
+        <table>
+            <tr>
+                <td>Preis Grundspiel:</td>
+                <td x-text="euro(preisGrundspiel())"></td>
+            </tr>
+            <tr>
+                <td>Preis Erweiterungen:</td>
+                <td x-text="euro(preisErweiterungen())"></td>
+            </tr>
+            <tr x-show="paket === 'anleiten'">
+                <td>Preis Anleiter:</td>
+                <td x-text="euro(preisAnleiter())"></td>
+            </tr>
+            <tr style="border-top: 1px solid lightgray;">
+                <td>Gesamtpreis:</td>
+                <td x-text="euro(gesamtPreis())"></td>
+            </tr>
+            <tr>
+                <th>Preis/Person:</th>
+                <td x-text="euro(preisProPerson())"></td>
+            </tr>
+        </table>
+
+    </div>
+</section>
