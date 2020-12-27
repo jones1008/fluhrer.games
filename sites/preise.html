@@ -3,6 +3,7 @@ layout: default
 title: Cantopia - Preisrechner
 permalink: /preise/
 dependencies: [alpinePreise]
+sitemap: false
 ---
 
 <section>
@@ -95,7 +96,7 @@ dependencies: [alpinePreise]
                 <td>Preis für <span x-text="anzahlAnleiter()"></span> Anleitende:</td>
                 <td x-text="euro(preisAnleiter())"></td>
             </tr>
-            <tr style="border-top: 1px solid lightgray;">
+            <tr class="border-top">
                 <td>Gesamtpreis:</td>
                 <td x-text="euro(gesamtPreis())"></td>
             </tr>
@@ -107,9 +108,9 @@ dependencies: [alpinePreise]
                     </a>
                 </td>
             </tr>
-            <tr>
+            <tr class="border-top">
                 <th>Preis/Person:</th>
-                <td x-text="euro(preisProPerson())"></td>
+                <th x-text="euro(preisProPerson())"></th>
             </tr>
         </table>
 
