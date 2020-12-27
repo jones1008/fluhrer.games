@@ -1,8 +1,8 @@
 const minSpielende = 6;
 
-const teamGroesseJugendarbeit = 8;
+const teamGroesseMin = Math.round(minSpielende / 2);
+const teamGroesseJugendarbeit = 8; // weil Kinder tendenziell mehr Leute/Team brauchen
 const teamGroesseStandard = 5;
-const teamGroesseKlein = Math.floor(minSpielende / 2);
 
 const anleiterMatrix = [
     {spielende: 100, anleiter: 3},
@@ -22,21 +22,28 @@ function preise() {
         anzahlSpielende: 30,
         minSpielende,
         erweiterungen: ["naturkatastrophen"],
-        jugendarbeit: true,
+        jugendarbeit: "ja",
+        isJugendarbeit() {
+            return this.jugendarbeit === "ja";
+        },
         anzahlErweiterungen() {
             return this.erweiterungen.length
         },
         anzahlTeams() {
-            return Math.floor(this.anzahlSpielende / this.teamGroesse());
+            let teams = Math.ceil(this.anzahlSpielende / this.teamGroesse());
+            return (teams <= 1) ? 2 : teams;
         },
         teamGroesse() {
-            if (this.jugendarbeit) {
+            if (this.anzahlSpielende <= this.minSpielende) {
+                return teamGroesseMin;
+            }
+            if (this.isJugendarbeit()) {
                 return teamGroesseJugendarbeit;
             }
-            if (this.anzahlSpielende <= this.minSpielende) {
-                return teamGroesseKlein;
-            }
             return teamGroesseStandard;
+        },
+        realTeamGroesse() {
+            return Math.round(this.anzahlSpielende / this.anzahlTeams());
         },
         anzahlAnleiter() {
             for (let entry of anleiterMatrix) {
@@ -47,14 +54,14 @@ function preise() {
             return 1;
         },
         preisGrundspiel() {
-            if (this.jugendarbeit) {
+            if (this.isJugendarbeit()) {
                 return this.anzahlTeams() * preisGrundspielProTeamJugendarbeit
             }
             return this.anzahlTeams() * preisGrundspielProTeamStandard
         },
         preisErweiterungen() {
             let preis = this.anzahlTeams() * this.anzahlErweiterungen();
-            if (this.jugendarbeit) {
+            if (this.isJugendarbeit()) {
                 return preis * preisErweiterungProTeamJugendarbeit;
             }
             return preis * preisErweiterungProTeamStandard;
@@ -70,7 +77,7 @@ function preise() {
             return gesamt
         },
         preisProPerson() {
-            return Math.round(this.gesamtPreis() / this.anzahlSpielende, 2);
+            return +((this.gesamtPreis() / this.anzahlSpielende).toFixed(2));
         },
 
         euro(value) {

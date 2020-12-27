@@ -1,6 +1,7 @@
 .preise {
     .radio {
         p {
+            @extend .fst-italic;
             @extend .small-text;
             @extend .text-grey;
             @extend .ps-3;

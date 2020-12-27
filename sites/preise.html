@@ -9,44 +9,47 @@ dependencies: [alpinePreise]
     <div x-data="preise()" class="preise">
         <h1 class="page-heading">Preisberechnung Cantopia</h1>
 
-        <p>Hier kannst du dir einen ungefähren Preis für das Spiel Cantopia zusammenrechnen:</p>
+        <p>
+            Der Preis Cantopia zu spielen ist von mehreren Faktoren abhängig.<br>
+            Hier haben wir ein kleines Tool, das dir den ungefähren Preis zusammenrechnet.<br>
+            Ein genaueres Angebot erhälst du per Anfrage <a href="/preise#kontakt">hier</a>.
+        </p>
+
         <br>
 
         <h6>
-            Wähle das Paket aus, was am Besten für euch passt:
-            <a href="/get-cantopia" target="_blank" title="Mehr Infos zu den Paketen">
-                <i class="fas fa-info-circle text-grey"></i>
+            Wie willst du Cantopia spielen?
+            <a href="/get-cantopia" target="_blank" title="Mehr Infos zu den Paketen" class="very-small-text">
+                Mehr Infos <sup><i class="fas fa-external-link-alt"></i></sup>
             </a>
         </h6>
         <fieldset class="radio">
             <input type="radio" id="paket-ausleihen" value="ausleihen" x-model="paket">
             <label for="paket-ausleihen">Ausleihen</label><br>
-            <p>Ihr leiht das Spiel aus und leitet es selbständig an.</p>
+            <p>Ihr leitet Cantopia selbständig an</p>
 
             <input type="radio"id="paket-anleiten" value="anleiten" x-model="paket">
             <label for="paket-anleiten">Anleiten</label><br>
-            <p>Wir kommen vorbei und spielen es mit euch.</p>
+            <p>Wir leiten Cantopia an</p>
         </fieldset>
         <br>
 
         <h6>
-            Wähle eine ungefähre Anzahl der Teilnehmer:
+            Wie viele sollen mitspielen?
         </h6>
         <p>
-            <label for="anzahl-spielende">
-                Anzahl Spielende:
-            </label>
-            <input type="number" x-model="anzahlSpielende" id="anzahl-spielende" :min="minSpielende" max="1000">
-            <span class="small-text text-grey">
-                (ca. <span x-text="anzahlTeams()"></span> Teams mit je <span x-text="teamGroesse()"></span> Spielenden)
+            <input type="number" x-model="anzahlSpielende" :min="minSpielende" max="1000">
+            <span class="small-text text-grey fst-italic">
+                (ca. <span x-text="anzahlTeams()"></span> Teams)
+<!--                mit je ca. <span x-text="realTeamGroesse()"></span> Spielenden-->
             </span>
         </p>
         <br>
 
         <h6>
-            Wähle die Erweiterungen aus, mit denen ihr spielen wollt:
-            <a href="/erweiterungen" target="_blank" title="Mehr Infos zu den Erweiterungen">
-                <i class="fas fa-info-circle text-grey"></i>
+            Mit welchen Erweiterungen wollt ihr spielen?
+            <a href="/erweiterungen" target="_blank" title="Mehr Infos zu den Erweiterungen" class="very-small-text">
+                Mehr Infos <sup><i class="fas fa-external-link-alt"></i></sup>
             </a>
         </h6>
         <fieldset>
@@ -66,10 +69,16 @@ dependencies: [alpinePreise]
         <br>
 
         <h6>Seid ihr in der Jugendarbeit tätig?</h6>
-        <p>
-            <input type="checkbox" id="jugendarbeit" x-model="jugendarbeit">
-            <label for="jugendarbeit">Ja</label>
-        </p>
+            <p class="small-text">
+                Wir sind selbst leidenschaftlich in der Jugendarbeit tätig und wollen deshalb vielen Kindern und Jugendlichen den Zugang zum Spiel Cantopia vereinfachen.
+<!--                Deshalb bieten wir hierfür einen besonderen Rabatt an.-->
+            </p>
+            <fieldset>
+                <input type="radio" id="ja" value="ja" x-model="jugendarbeit">
+                <label for="ja">Ja</label>&nbsp;&nbsp;&nbsp;
+                <input type="radio" id="nein" value="nein" x-model="jugendarbeit">
+                <label for="nein">Nein</label>
+            </fieldset>
 
         <hr>
 
@@ -83,18 +92,28 @@ dependencies: [alpinePreise]
                 <td x-text="euro(preisErweiterungen())"></td>
             </tr>
             <tr x-show="paket === 'anleiten'">
-                <td>Preis Anleiter:</td>
+                <td>Preis für <span x-text="anzahlAnleiter()"></span> Anleitende:</td>
                 <td x-text="euro(preisAnleiter())"></td>
             </tr>
             <tr style="border-top: 1px solid lightgray;">
                 <td>Gesamtpreis:</td>
                 <td x-text="euro(gesamtPreis())"></td>
             </tr>
+            <tr x-show="paket === 'ausleihen'">
+                <td>+ evtl. Versand</td>
+                <td>
+                    <a href="/faq#versand" class="very-small-text">
+                        Mehr Infos <sup><i class="fas fa-external-link-alt"></i></sup>
+                    </a>
+                </td>
+            </tr>
             <tr>
                 <th>Preis/Person:</th>
                 <td x-text="euro(preisProPerson())"></td>
             </tr>
         </table>
+
+        <p></p>
 
     </div>
 </section>
