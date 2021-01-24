@@ -23,10 +23,11 @@
 }
 body {
   font-family: Arial, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 p {
-  line-height: 1.3;
+  line-height: 1.4;
+  margin-bottom: 1.5rem
 }
 h1, h2, h3, h4, h5, h6 {
   @extend .fw-bold;
@@ -71,6 +72,12 @@ h6 {
 }
 .bigger-text{
   font-size: 1.2em;
+}
+.big-text {
+  @extend .text-danger;
+  @extend h5;
+  @extend .d-inline;
+  font-size: 2rem;
 }
 hr {
   margin-top: 2rem;
