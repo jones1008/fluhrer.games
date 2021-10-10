@@ -3,7 +3,9 @@ sass:
   load_paths:
     - _sass
     - node_modules
-exclude: ["package*.json", "Gruntfile.js"]
+exclude: ["package*.json", "Gruntfile.js", "docker-compose.yml", "Dockerfile", "startup.sh"]
 url: "https://fluhrer.games"
 plugins:
   - jekyll-sitemap
+host: 0.0.0.0
+port: 4000
