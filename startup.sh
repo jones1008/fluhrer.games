@@ -6,6 +6,9 @@ if [ "$MODE" != "dev" ] && [ "$MODE" != "prod" ]; then
     exit 1
 fi
 
+chmod -R +w ./
+umask u=rwx,g=rwx,o=rwx
+
 echo "INFO: executing npm install..."
 npm install
 echo ""

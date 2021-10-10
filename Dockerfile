@@ -1,2 +1,2 @@
-FROM jekyll/jekyll:4.2.0
+FROM jekyll/jekyll:3.8.6
 RUN npm install -g grunt-cli
