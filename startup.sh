@@ -13,10 +13,6 @@ echo "INFO: executing npm install..."
 npm install
 echo ""
 
-echo "INFO: executing bundle install"
-bundle install
-echo ""
-
 if [ "$MODE" = "dev" ]; then
     echo "INFO: serving Jekyll..."
     bundle exec jekyll serve & grunt serve

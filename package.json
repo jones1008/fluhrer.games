@@ -5,8 +5,7 @@
   "scripts": {
     "serve": "echo don't forget to execute 'grunt serve' && bundle exec jekyll serve",
     "live": "echo don't forget to execute 'grunt serve' && browser-sync start --proxy http://127.0.0.1:4000 --files '_site/**/*'",
-    "build": "bundle exec jekyll build && grunt",
-    "install": "bundle install && npm install"
+    "build": "bundle exec jekyll build && grunt"
   },
   "author": "jones1008",
   "license": "ISC",
