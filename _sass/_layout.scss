@@ -139,7 +139,7 @@ section:nth-of-type(even) {
     @extend .p-md-0;
     @extend .text-center;
     padding-bottom: 1rem;
-    img{
+    img {
       max-width: 400px;
     }
   }
@@ -148,6 +148,21 @@ section:nth-of-type(even) {
       display: flex;
       flex-direction: column-reverse;
     }
+  }
+  @include media-breakpoint-up(md) {
+    &:nth-child(even) {
+      .content {
+        padding-right: 3rem;
+      }
+    }
+    &:nth-child(odd) {
+      .content {
+        padding-left: 3rem;
+      }
+    }
+  }
+  &:not(:last-child) {
+    @extend .pb-5;
   }
 }
 
