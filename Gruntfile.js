@@ -36,7 +36,7 @@ module.exports = function(grunt) {
       css: {
         options: {
           content: ["_site/*.html", "_site/**/*.html"],
-          whitelist: ["materialbox-overlay", "glide__bullet--active"]
+          whitelist: ["glide__bullet--active"]
         },
         files: {
           "_site/assets/css/main.css": ["_site/assets/css/main.css"]
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
     watch: {
       scripts: {
         files: ["_site/index.html"],
-        tasks: ["concat", "purgecss", "copy"]
+        tasks: ["concat", "copy"]
       }
     }
   });
@@ -85,5 +85,5 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['concat', 'purgecss', 'copy', 'uglify']);
-  grunt.registerTask('serve', ['concat', 'purgecss', 'copy', 'watch']);
+  grunt.registerTask('serve', ['concat', 'copy', 'watch']);
 };
