@@ -4,7 +4,7 @@ services:
     volumes:
       - ./:/srv/jekyll
     entrypoint: /bin/bash -c "chmod +x ./startup.sh && ./startup.sh ${MODE}"
-    restart: always
+    restart: "no"
     ports:
       - "4000:4000"
     environment:
