@@ -18,5 +18,5 @@ if [ "$MODE" = "dev" ]; then
     bundle exec jekyll serve & grunt serve
 else
     echo "INFO: building Jekyll..."
-    bundle exec jekyll build && grunt
+    bundle exec jekyll build --trace && grunt
 fi
