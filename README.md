@@ -1,12 +1,22 @@
 # fluhrer.games
 This is the code for the website [https://fluhrer.games](https://fluhrer.games) from Fluhrer Games GbR.
-It is realized with [Jekyll](https://jekyllrb.com/), a static site generator.
+It is realized with [Jekyll](https://jekyllrb.com/), a static site generator and is encapsulated in Docker with docker-compose.
+
+> IMPORTANT: make sure to execute `chown -R 1000 ./` in this root directory to avoid jekyll permission errors when building the application.
 
 ## Development
-To spin up a local server at [http://localhost:4000](http://localhost:4000) just run `npm run serve` and then `grunt serve` in another command line.
+To spin up a local server at [http://localhost:4000](http://localhost:4000) create a `.env` file with the following content:
+```dotenv
+MODE=dev
+```
+Then run `docker-compose up`.
 
-## Production
-To build the application for production run `npm run build` and serve this directory with a webserver to access it.
+## Production Build
+To build the application for production run change your `.env` file to:
+```dotenv
+MODE=prod
+```
+After executing `docker-compose up` the site is deployed to the subdirectory `./_site`.
 
 ## Performance
 [Grunt](https://gruntjs.com/) concats JavaScript and CSS files, minifies them and removes unused CSS to optimize browser performance. 
