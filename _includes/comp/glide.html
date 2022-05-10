@@ -20,14 +20,14 @@
         </ul>
         <div class="glide__bullets" data-glide-el="controls[nav]">
             {% for item in include.data %}
-                <button class="glide__bullet" data-glide-dir="={{forloop.index0}}"></button>
+                <button class="glide__bullet" data-glide-dir="={{forloop.index0}}" aria-label="Gehe zu Bild {{forloop.index}}"></button>
             {% endfor %}
         </div>
         <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<" aria-label="zu vorherigem Bild">
                 <i class="fas fa-chevron-circle-left fa-2x"></i>
             </button>
-            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="zu nächstem Bild">
                 <i class="fas fa-chevron-circle-right fa-2x"></i>
             </button>
         </div>
