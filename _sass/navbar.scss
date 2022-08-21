@@ -5,6 +5,18 @@
   z-index: 1000;
   border-bottom: lightgrey 1px solid;
   width: 100%;
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-action {
+    @extend .btn;
+    @extend .btn-primary;
+    font-size: 1.1rem;
+  }
 }
 @supports not ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
   .navbar{
