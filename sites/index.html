@@ -43,15 +43,19 @@ description: Cantopia ist ein dynamisches, strategisches Großgruppenspiel für 
     <div>
         <h4 id="wie-funktioniert-cantopia">Wie funktioniert Cantopia?</h4>
         {% include comp/image-and-text.html folder="home" data="wie-funktioniert-cantopia" %}
-        {% include comp/centered-button.html name="Mehr zum Spiel" site="/das-spiel" %}
+        {% include comp/button-link.html center=true name="Mehr zum Spiel" site="/das-spiel" %}
     </div>
 </section>
 
 <section>
     <div>
-        <h4 id="wie-kann-ich-cantopia-spielen">Wie kann ICH Cantopia spielen?</h4>
+        <h4 id="wie-kann-ich-cantopia-spielen">Wie kann ICH Cantopia spielen/reservieren?</h4>
         <p>Du kannst Cantopia selbst ausleihen oder wir kommen vorbei und leiten es an.</p>
-        {% include comp/centered-button.html name="Mehr dazu" site="/cantopia-reservieren" %}
+        <p>Fülle das Formular aus, um Cantopia für eure Gruppe zu reservieren</p>
+        <div class="d-flex justify-content-center gap-4">
+            {% include comp/button-link.html name="Cantopia reservieren" link="https://forms.gle/JTz4y4myHv6oPbSK6" %}
+            {% include comp/button-link.html name="Cantopia-Pakete" site="/cantopia-reservieren" type="secondary" %}
+        </div>
     </div>
 </section>
 
@@ -73,7 +77,7 @@ description: Cantopia ist ein dynamisches, strategisches Großgruppenspiel für 
         <p>
             Wir haben keinen spezifischen Preis auf Cantopia festgelegt, sondern folgen dem Prinzip <strong>Pay what it's worth!</strong>
         </p>
-        {% include comp/centered-button.html name="zum Preismodell" site="/preis" %}
+        {% include comp/button-link.html center=true name="zum Preismodell" site="/preis" %}
     </div>
 </section>
 
@@ -81,7 +85,7 @@ description: Cantopia ist ein dynamisches, strategisches Großgruppenspiel für 
     <div>
         <h4 id="impressionen">Impressionen</h4>
         <p class="text-center bigger-text">Folge Fluhrer Games auf Instagram!</p>
-        {% include comp/centered-button.html name="Zum Insta-Account" link="https://instagram.com/fluhrer.games" %}
+        {% include comp/button-link.html center=true name="Zum Insta-Account" link="https://instagram.com/fluhrer.games" %}
         <br>
 
         <!-- Place <div> tag where you want the feed to appear -->
@@ -97,6 +101,6 @@ description: Cantopia ist ein dynamisches, strategisches Großgruppenspiel für 
         </script>
 
         <br>
-        {% include comp/centered-button.html name="Mehr zum Spiel" site="/das-spiel" %}
+        {% include comp/button-link.html center=true name="Mehr zum Spiel" site="/das-spiel" %}
     </div>
 </section>

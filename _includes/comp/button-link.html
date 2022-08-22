@@ -1,9 +1,13 @@
+{% if include.center %}
 <div class="text-center">
-    <a class="btn btn-lg btn-primary text-white text-center"
+{% endif %}
+    <a class="btn btn-lg {% if include.type == 'secondary' %} btn-outline-primary {% else %} btn-primary text-white {% endif %} text-center"
        href="{% if include.link %}{{include.link}}{% else %}{{include.site}}{% endif %}"
     >
         {{include.name}}
         &nbsp;
         <i class="fas fa-chevron-circle-right"></i>
     </a>
+{% if include.center %}
 </div>
+{% endif %}
