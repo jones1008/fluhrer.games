@@ -169,6 +169,7 @@ section:nth-of-type(even) {
 // quote
 .quotes {
   padding: 1rem 0;
+  row-gap: 2rem;
   > div {
     padding-top: 1em;
     padding-bottom: 1em;
