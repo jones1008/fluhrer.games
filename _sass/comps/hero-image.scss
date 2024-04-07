@@ -1,8 +1,27 @@
-.hero-image {
-    background-image: url(/assets/images/wuerfel-hero-image.jpg);
-    background-position: center 80%;
-    background-size: cover;
+.hero-image-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     height: 700px;
+
+    .hero-image {
+        width: 100%;
+        max-width: 1400px;
+        img {
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+            object-position: center 80%;
+
+            @include media-breakpoint-down(md){
+                height: 500px;
+            }
+            @include media-breakpoint-up(xxl) {
+                border-bottom-left-radius: 32px;
+                border-bottom-right-radius: 32px;
+            }
+        }
+    }
 
     &.hero-image-small {
         height: 500px;
@@ -15,6 +34,7 @@
         height: 500px;
     }
     .hero-text {
+        position: absolute;
         display: flex;
         flex-direction: column;
         align-items: center;
