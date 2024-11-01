@@ -28,3 +28,9 @@
   image: "ueber-uns/flipchart.jpg"
   imagealt: "Jones am Flipchart beim Brainstormen"
   bigimage: true
+- time: "2024"
+  title: "Neues Koffer-Set"
+  facts: "Im Jahr 2024 haben wir den lange geplanten <em>Cantopia-Koffer</em> fertig gestellt. Damit stellen wir ein zweites Set zur Verfügung, mit dem Cantopia gespielt werden kann. Obwohl das neue Koffer-Set im Vergleich zum Systainer-Set so klein ist, ist es genauso wie das Systainer-Set auch auf 110 Spielende ausgelegt."
+  image: "ueber-uns/koffer-in-aktion.jpg"
+  imagealt: "Fabi läuft mit dem Koffer davon"
+  bigimage: true
