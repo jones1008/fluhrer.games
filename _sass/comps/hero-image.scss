@@ -23,13 +23,6 @@
         }
     }
 
-    &.hero-image-small {
-        height: 500px;
-        @include media-breakpoint-down(md){
-            height: 300px;
-        }
-    }
-
     @include media-breakpoint-down(md){
         height: 500px;
     }
@@ -55,9 +48,5 @@
                 font-size: 5em;
             }
         }
-        //.hero-subtitle {
-        //  font-weight: normal !important;
-        //  line-height: 1;
-        //}
     }
 }

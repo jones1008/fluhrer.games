@@ -1,0 +1,7 @@
+.pay-hero-image {
+    img {
+        @include media-breakpoint-down(md) {
+            width: 120% !important;
+        }
+    }
+}
