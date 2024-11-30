@@ -136,6 +136,9 @@ section:nth-of-type(even) {
   padding: 1rem 0;
   .image {
     @extend .col-md-3;
+    &.image-big {
+      @extend .col-md-5;
+    }
     @extend .p-md-0;
     @extend .text-center;
     padding-bottom: 1rem;
@@ -152,12 +155,12 @@ section:nth-of-type(even) {
   @include media-breakpoint-up(md) {
     &:nth-child(even) {
       .content {
-        padding-right: 3rem;
+        padding-right: 2rem;
       }
     }
     &:nth-child(odd) {
       .content {
-        padding-left: 3rem;
+        padding-left: 2rem;
       }
     }
   }
@@ -199,18 +202,9 @@ section:nth-of-type(even) {
   border-right: 2px solid lightgrey;
   height: 100%;
   margin-bottom: 0.5rem;
-  //position: absolute;
 }
 
 .image-big {
-  //@extend .d-flex;
-  //@extend .justify-content-center;
-  //> div {
-  //  .image-subtitle {
-  //    @extend .small-text;
-  //    padding-top: 0.5rem;
-  //  }
-  //}
   img {
     max-width: 700px;
     width: 100%;
@@ -258,4 +252,8 @@ section:nth-of-type(even) {
     height: 100%;
     text-decoration: none;
   }
+}
+
+li {
+  margin-bottom: .6rem
 }

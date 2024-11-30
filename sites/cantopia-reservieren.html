@@ -1,65 +1,74 @@
 ---
 layout: default
-title: Cantopia reservieren - Pakete
+title: Cantopia ausleihen
 permalink: /cantopia-reservieren/
-description: Wie könnt ihr für eure Gruppe Cantopia reservieren? Hierfür haben wir zwei Pakete. Schaut euch an, welches für euch am besten passt und reserviert für eure Gruppe.
+description: Wie könnt ihr für eure Gruppe Cantopia ausleihen? Schaut euch an, was euch erwartet und reserviert ein Set für eure Gruppe.
+dependencies: [fslightbox]
 ---
 
 <section>
     <div>
-        <h1 class="page-heading">Cantopia reservieren</h1>
-        <p>
-            Wie könnt ihr für eure Gruppe Cantopia reservieren? Hierfür haben wir zwei Pakete. Schaut euch an, welches für euch am besten passt und reserviert für eure Gruppe.
-        </p>
-        {% include comp/button-link.html center=true link="https://forms.gle/JTz4y4myHv6oPbSK6" name="Zur Reservierung" %}
+        <h1 class="page-heading">Cantopia ausleihen</h1>
+        <p>Das Spiel auszuleihen und zu spielen läuft folgendermaßen ab:</p>
+        <ol>
+            <li>
+                Du füllst kurz dieses Reservierungs-Formular aus:<br>
+                {% include comp/button-link.html link="https://forms.gle/JTz4y4myHv6oPbSK6" name="Zur Reservierung" %}
+            </li>
+            <li>Wir kontaktieren dich, um zu koordinieren, wie eins der beiden <a href="#cantopia-sets">Cantopia-Sets</a> zu euch kommt.</li>
+            <li>Wir schicken euch den Zugang zur <a href="/cantopia-app">App</a> und das Vorbereitungsdokument zum Spielen.</li>
+            <li>Vor dem Spieltag bereitet ihr alles vor, wie es in dem Dokument beschrieben ist.</li>
+            <li>Ihr lasst das Erklärungsvideo laufen, damit alle Spielenden die Regeln des Spiels kennen.</li>
+            <li>Das Spiel kann losgehen!</li>
+        </ol>
+        <br>
+        <p>Du kannst das Spiel aber auch von uns anleiten lassen, dann musst du dich um noch weniger kümmern. Das ergibt aber eher Sinn für Firmenevents oder Ähnliches.</p>
     </div>
 </section>
 
 <section>
     <div>
-        <h4>Paket: Anleiten</h4>
-        <div class="image image-big">
-            <img src="/assets/images/cantopia-reservieren/paket-anleiten-v3.jpg" alt="Fabi erklärt das Spiel vor einer Leinwand">
-            <div class="image-subtitle">Wir kommen vorbei und spielen das Spiel mit euch</div>
-        </div>
-        <br>
-        <h5 class="italic-serif">Was ist alles dabei?</h5>
-        {% include comp/icons.html folder="cantopia-reservieren" data="paket-anleiten-dabei" %}
-        <h5 class="italic-serif">Wie läuft das ab?</h5>
-        <ol class="list">
-            <li>
-              Füllt einfach das Google Forms Formular mit allen Informationen aus:<br>
-              {% include comp/button-link.html link="https://forms.gle/JTz4y4myHv6oPbSK6" name="Reservierungs-Formular" %}
-            </li>
-            <li>Wir melden uns bei euch und klären noch weitere Einzelheiten</li>
-            <li>Wir kommen vorbei und spielen mit euch Cantopia</li>
-        </ol>
-        <p>Sollte es weitere Fragen geben, dürft ihr uns natürlich jeder Zeit auf <a href="#kontakt">diesen Kanälen kontaktieren</a>.</p>
-    </div>
-</section>
+        <h4 id="cantopia-sets">Cantopia-Sets</h4>
+        <p>Wir haben aktuell 2 Cantopia-Sets, die du ausleihen kannst:</p>
 
-<section>
-    <div>
-        <h4>Paket: Ausleihen</h4>
-        <div class="image image-big">
-            <img src="/assets/images/cantopia-reservieren/paket-ausleihen.jpg" alt="offener Systainer mit Materialien">
-            <div class="image-subtitle">Ihr bekommt die Materialien und leitet das Spiel selbst an</div>
+        <h5 id="systainer-set">"Systainer"-Set:</h5>
+        <div>
+            <div class="image-and-text d-flex flex-wrap justify-content-center">
+                <div class="image image-big">
+                    <a data-fslightbox="timeline" href="/assets/images/home/kistensystem.png">
+                        <img class="rounded-3" src="/assets/images/cantopia-reservieren/kistensystem.png" alt='Das Cantopia "Systainer"-Set'>
+                    </a>
+                </div>
+                <div class="content col-md-7 d-flex flex-column justify-content-center0">
+                    <ul>
+                        <li>Für bis zu 110 Spielende ausgelegt (11x10er Teams)</li>
+                        <li>Zum Transport wird ca. ein kompletter Kofferraum benötigt</li>
+                        <li>Je nach gewählten <a href="/erweiterungen">Erweiterungen</a> sind es mehr oder weniger Kisten (auch "Systainer" genannt)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <br>
-        <h5 class="italic-serif">Was ist alles dabei?</h5>
-        {% include comp/icons.html folder="cantopia-reservieren" data="paket-ausleihen-dabei" %}
-        <h5 class="italic-serif">Wie läuft das ab?</h5>
-        <ol class="list">
-            <li>
-              Füllt einfach das Google Forms Formular mit allen Informationen aus:<br>
-              {% include comp/button-link.html link="https://forms.gle/JTz4y4myHv6oPbSK6" name="Reservierungs-Formular" %}
-            </li>
-            <li>Wir melden uns bei euch und klären noch weitere Einzelheiten</li>
-            <li>Ihr bekommt alle Infos und Dokumente, die für die Spielvorbereitung und Durchführung nötig sind</li>
-            <li>Versand/Abholung der Materialien</li>
-            <li>Am Spieltag leitet ihr selbst das Spiel</li>
-        </ol>
-        <p>Sollte es weitere Fragen geben, dürft ihr uns natürlich jeder Zeit auf <a href="#kontakt">diesen Kanälen kontaktieren</a>.</p>
+
+        <h5 id="koffer-set">Koffer-Set:</h5>
+        <div>
+            <div class="image-and-text d-flex flex-wrap justify-content-center">
+                <div class="image image-big">
+                    <a data-fslightbox="timeline" href="/assets/images/home/koffer.png">
+                        <img class="rounded-3" src="/assets/images/cantopia-reservieren/koffer.png" alt='Das Cantopia "Systainer"-Set'>
+                    </a>
+                </div>
+                <div class="content col-md-7 d-flex flex-column justify-content-center0">
+                    <ul>
+                        <li>Auch für bis zu 110 Spielende ausgelegt (11x10er Teams)</li>
+                        <li>Braucht viel weniger Platz und kann auch im Zug mitgenommen werden. Wiegt allerdings trotzdem 33 kg</li>
+                        <li>Alle Materialien sind hierbei ein bisschen kleiner skaliert und enger zusammengepackt, damit es in den Koffer passt</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        {% include comp/button-link.html center=true link="https://forms.gle/JTz4y4myHv6oPbSK6" name="Jetzt reservieren!" %}
     </div>
 </section>
 
@@ -67,13 +76,5 @@ description: Wie könnt ihr für eure Gruppe Cantopia reservieren? Hierfür habe
     <div>
         <h4>FAQ</h4>
         {% include faq.html %}
-    </div>
-</section>
-
-<section>
-    <div>
-        <h4>Preis</h4>
-        <p>Aber was kostet es eigentlich Cantopia zu spielen?</p>
-        {% include comp/button-link.html center=true site="/preis" name="Hier erfährst du mehr" %}
     </div>
 </section>
