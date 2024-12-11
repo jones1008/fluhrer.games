@@ -259,3 +259,4 @@ dist
 .env
 docker-compose.override.yml
 _data/anzahl-spielende-google-drive/spielende.csv
+pull.log

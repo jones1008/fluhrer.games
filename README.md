@@ -23,3 +23,12 @@ After executing `docker-compose up` the site is deployed to the subdirectory `./
 On each sub site there is also only the JavaScript loaded that is needed to further improve performance.
 
 All images are served as `.webp` files if the browser supports it which improves the performance drastically.
+
+## Fetch Anzahl Spielende data
+On the home page of fluhrer.games is a number that changes sometimes (Anzahl Spielende).
+This dynamically changing number is stored in a `spielende.csv` file on Google Drive.
+
+The script `pull-anzahl-spielende-and-rebuild.sh` is being called by a cron job on the server every night.
+The script uses [rclone](https://rclone.org/) to copy the file from Google Drive into `./_data/anzahl-spielende-google-drive/spielende.csv` if it changed.
+To be able to use the script you need to install rclone on the server and add a Google Drive remote called `gdrive-cantopia` with the command `rclone config`.
+Also the script assumes that the `spielende.csv` file is on the following path in Google Drive: `/Cantopia/fluhrer.games-anzahl-spielende` 
